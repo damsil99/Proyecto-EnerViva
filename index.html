@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EnerViva</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home/style.css">
 </head>
 <body>
     <header id="inicio" class="header">
@@ -100,28 +100,55 @@
 
     <div id="nuestro-team" class="layout-grid-3">
         <main class="main-content-3">
-            <section class="nuestro-equipo">
+            <section id="julian" class="nuestro-equipo" onclick="openModal('modal-julian')">
                 <h2>Julián</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatibus, magni numquam ad exercitationem ea rerum fugit modi quos natus deleniti laudantium unde corrupti. Placeat, dolores? Asperiores ipsum rerum ratione.</p>
             </section>
 
-            <section class="nuestro-equipo">
+            <section id="luisa" class="nuestro-equipo" onclick="openModal('modal-luisa')">
                 <h2>Luisa</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sapiente maxime ratione qui illum odit, quis consequuntur veniam blanditiis quidem quas aliquam sunt eos a asperiores distinctio reiciendis neque. Reiciendis.</p>
             </section>
 
-            <section class="nuestro-equipo">
-                <h2 class="nombres">Daniel</h2>
+            <section id="daniel" class="nuestro-equipo" onclick="openModal('modal-daniel')">
+                <h2>Daniel</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error veniam distinctio, mollitia aperiam, beatae cum voluptate nulla pariatur deleniti iusto porro facere veritatis! Aliquam praesentium minima repellendus? Magni, dolorem ducimus!</p>
             </section>
         </main>
+    </div>
+
+
+    
+    <div id="modal-julian" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-julian')">&times;</span>
+            <h2>Julián</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique dolore voluptatibus corrupti laudantium consectetur corporis? Ipsam deleniti, ipsum eveniet vel quaerat laudantium a, neque officia porro dolore optio nesciunt?</p>
+        </div>
+    </div>
+
+    <div id="modal-luisa" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-luisa')">&times;</span>
+            <h2>Luisa</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique dolore voluptatibus corrupti laudantium consectetur corporis? Ipsam deleniti, ipsum eveniet vel quaerat laudantium a, neque officia porro dolore optio nesciunt?</p>
+        </div>
+    </div>
+
+    <div id="modal-daniel" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal-daniel')">&times;</span>
+            <h2>Daniel</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique dolore voluptatibus corrupti laudantium consectetur corporis? Ipsam deleniti, ipsum eveniet vel quaerat laudantium a, neque officia porro dolore optio nesciunt?</p>
+        </div>
     </div>
 
     <footer class="footer">
         <p>Creado por Julian, Luisa, Daniel: <br>Bootcam de Programación - 2025</p>
     </footer>
 
-    <script src="js/flecha.js"></script>
+    <script src="js/home/flecha.js"></script>
+    <script src="js/home/equipo.js"></script>
 
 </body>
 </html>
