@@ -1,0 +1,50 @@
+body{
+    background-color: whitesmoke;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    display: grid;
+    /* min-width: 100vh; */
+}
+
+.header{
+    background-color: #1d5d6f;
+    margin: 0;
+    padding: 15px;
+    text-align: justify;
+}
+
+.narvar{
+    text-decoration: none;
+    color: black;
+    list-style: inside;
+    text-align: left;
+    padding-left: 0%;
+    line-height: 1.6;
+}
+.narvar h2{
+    text-align: justify;
+    color: rgb(214, 179, 21);
+}
+
+.bio{
+    color: black;
+    background-color: #5b828d;
+    text-align: justify;
+    padding: 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+   
+}
+
+.bio h2{
+    color: aliceblue;
+}
+
+.bio:hover{
+    cursor: pointer;
+    transform: scale(1.0);
+    transition: transform 0.2s ease;
+}
