@@ -3,53 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EnerViva </title>
+    <title>EnerViva</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header">
+    <header id="inicio" class="header">
         <img src="img/logo.jpg" alt="EnerViva Logo">
         <h1>EnerViva</h1>
     </header>
 
     <nav class="navbar">
         <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Quienes Somos</a></li>
-            <li><a href="#">Nuestro Equipo</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#energias-renovables">Energías Renovables</a></li>
+            <li><a href="#sobre-nosotros">Quienes Somos</a></li>
+            <li><a href="#nuestro-team">Nuestro Equipo</a></li>
             <li><a href="#">Contactenos</a></li>
         </ul>
     </nav>
 
-    <div class="layout-grid">
+    <div class="slider-box">
+        <ul>
+            <li>
+                <img id="slider1" src="img/logo.jpg" alt="">
+                <div class="slider-text">
+                    <h2>Imagen 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                </div>
+            </li>
+            <li>
+                <img id="slider2" src="img/logo.jpg" alt="">
+                <div class="slider-text">
+                    <h2>Imagen 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                </div>
+            </li>
+            <li>
+                <img id="slider3" src="img/logo.jpg" alt="">
+                <div class="slider-text">
+                    <h2>Imagen 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                </div>
+            </li>
+            <li>
+                <img id="slider4" src="img/logo.jpg" alt="">
+                <div class="slider-text">
+                    <h2>Imagen 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                </div>
+            </li>
+        </ul>
+        <button class="flecha left" onclick="moveSlide(-1)">&#10094;</button>
+        <button class="flecha right" onclick="moveSlide(1)">&#10095;</button>
+    </div>
+
+    <div id="energias-renovables" class="layout-grid">
         <main class="main-content">
             <section id="#" class="energia">
-                <img src="img/" alt="">
+                <img src="img/logo.jpg" alt="">
                 <h2>Energia</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum perspiciatis eligendi ut architecto explicabo alias odio saepe voluptas exercitationem velit placeat sapiente, ipsum quas sequi, autem aut impedit modi quae?</p>
             </section>
 
             <section id="#" class="energia">
-                <img src="img/" alt="">
+                <img src="img/logo.jpg" alt="">
                 <h2>Energia</h2>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel praesentium sed ipsam omnis, dolore odio molestiae animi libero voluptatum reprehenderit. Consequuntur dolorem recusandae sequi, tempora beatae quidem voluptate molestias officiis.</p>
             </section>
             
             <section id="#" class="energia">
-                <img src="img/" alt="">
+                <img src="img/logo.jpg" alt="">
                 <h2>Energia</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse placeat modi vero aliquid optio, nihil, aliquam et quis, provident quasi iure voluptate facilis laboriosam sequi dolores nobis. Architecto, fugiat magni.</p>
             </section>
 
             <section id="#" class="energia">
-                <img src="img/" alt="">
+                <img src="img/logo.jpg" alt="">
                 <h2>Energia</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem illo architecto aperiam, nobis quae ex eum aspernatur dignissimos dicta beatae necessitatibus obcaecati voluptate officiis, assumenda saepe. Odio vel magni maxime!</p>
             </section>
         </main>
     </div>
 
-    <div class="layout-grid-2">
+    <div id="sobre-nosotros" class="layout-grid-2">
         <main class="main-content-2">
             <section class="quienes-somos">
                 <img src="img/logo.jpg" alt="">
@@ -62,9 +98,30 @@
         </main>
     </div>
 
-    <footer class="footer">
+    <div id="nuestro-team" class="layout-grid-3">
+        <main class="main-content-3">
+            <section class="nuestro-equipo">
+                <h2>Julián</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel voluptatibus, magni numquam ad exercitationem ea rerum fugit modi quos natus deleniti laudantium unde corrupti. Placeat, dolores? Asperiores ipsum rerum ratione.</p>
+            </section>
 
+            <section class="nuestro-equipo">
+                <h2>Luisa</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia sapiente maxime ratione qui illum odit, quis consequuntur veniam blanditiis quidem quas aliquam sunt eos a asperiores distinctio reiciendis neque. Reiciendis.</p>
+            </section>
+
+            <section class="nuestro-equipo">
+                <h2 class="nombres">Daniel</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error veniam distinctio, mollitia aperiam, beatae cum voluptate nulla pariatur deleniti iusto porro facere veritatis! Aliquam praesentium minima repellendus? Magni, dolorem ducimus!</p>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>Creado por Julian, Luisa, Daniel: <br>Bootcam de Programación - 2025</p>
     </footer>
+
+    <script src="js/flecha.js"></script>
 
 </body>
 </html>
