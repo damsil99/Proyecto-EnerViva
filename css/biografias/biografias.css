@@ -49,6 +49,10 @@ body{
     margin: 0 15px;
 }
 
+.navbar li:hover{
+    transform: scale(1.05);
+}
+
 .navbar ul li a{
     color: white;
     text-decoration: none;
@@ -57,7 +61,7 @@ body{
 }
 
 .navbar ul li a:hover{
-    color: #ffcc00;
+    color: #3fb071;
 }
 
 
