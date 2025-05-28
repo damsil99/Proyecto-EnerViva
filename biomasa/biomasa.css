@@ -1,12 +1,13 @@
 body{
-    background-color: whitesmoke;
+    background-color: #c9e2e9;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
     margin: 0;
     padding: 0;
     line-height: 1.6;
-    display: grid;
-    /* min-width: 100vh; */
+    display: flex;
+    flex-direction: column;
+    /min-width: 100vh;
 }
 
 .header{
@@ -16,35 +17,326 @@ body{
     text-align: justify;
 }
 
-.narvar{
-    text-decoration: none;
-    color: black;
-    list-style: inside;
-    text-align: left;
-    padding-left: 0%;
-    line-height: 1.6;
-}
-.narvar h2{
-    text-align: justify;
-    color: rgb(214, 179, 21);
+summary {
+background-color: #18657a;
+justify-self: start;
+flex-direction: column;
+list-style: none;
+margin: 5px;
+padding: 5px;
+border-radius: 5px;
+
 }
 
-.bio{
+.lista{
     color: black;
-    background-color: #5b828d;
+    margin: 0;
+    padding:10px ;
+    border-radius: 10px;
+}
+ul li{
+    background-color: #afbbbe;
+    text-align: center;
+    list-style: none;
+    margin: 10px;
+    border-radius: 15px;
+    width: 40%;
+}
+.menu:hover{
+    color: #2a3e44;
+    cursor: pointer;
+    
+}
+.lista:hover{
+    color: #2a3e44;
+    cursor: pointer;
+    
+}
+
+.img{
+    margin: 15px;
+    padding: 8px;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    align-content: center;
+    
+}
+h3{
+    color: black;
+}
+.bio{
+    background-color: white;
+    color: black;
     text-align: justify;
-    padding: 0;
+    margin: 20px;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-   
+    
+
 }
 
 .bio h2{
-    color: aliceblue;
+    color: #1d5d6f
 }
 
 .bio:hover{
     cursor: pointer;
+     /* transition: margin-left 1s ease-in-out;
+    transform: scale(1.1);
+    transition: transform 0.2s ease; */
+    
+}
+
+.ventajas{
+    color: black;
+    background-color: #5b828d;
+    text-align: justify;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+.ventajas h2{
+    color: aliceblue;
+}
+
+.ventajas:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.desventajas{
+    color: black;
+    background-color: #5b828d;
+    text-align: justify;
+    margin: 20px;
+    padding: 15px;
+ 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+.desventajas h2{
+    color: aliceblue;
+}
+
+.desventajas:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.ejemplo{
+    color: black;
+    background-color: #5b828d;
+    text-align: justify;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+.ejemplo h2{
+    color: aliceblue;
+}
+
+.ejemplo:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.ejemplo1{
+    color: black;
+    background-color: #5b828d;
+    text-align: justify;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+.ejemplo1 h2{
+    color: aliceblue;
+}
+
+.ejemplo1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+
+.utiliza{
+    color: black;
+    background-color: #5b828d;
+    text-align: justify;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+.utiliza h2{
+    color: aliceblue;
+}
+
+.utiliza:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.utiliza1{
+    color: black;
+    background-color: #5b828d;
+    text-align: justify;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+.utiliza1 h2{
+    color: aliceblue;
+}
+
+.utiliza1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.tipos{
+    color: black;
+    background-color: #5b828d;
+    text-align: justify;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+.tipos h2{
+    color: aliceblue;
+    .tipos:hover;
+    cursor: pointer;
     transform: scale(1.0);
     transition: transform 0.2s ease;
+}
+
+.tipos:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.tipos1{
+    color: black;
+    background-color: #5b828d;
+    text-align: justify;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+
+.tipos1 h2{
+    color: aliceblue;
+    .tipos:hover;
+    cursor: pointer;
+    transform: scale(1.0);
+    transition: transform 0.2s ease;
+}
+
+.tipos1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+
+.tipos2{
+    color: black;
+    background-color: #5b828d;
+    text-align: justify;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+
+.tipos1 h2{
+    color: aliceblue;
+    .tipos:hover;
+    cursor: pointer;
+    transform: scale(1.0);
+    transition: transform 0.2s ease;
+}
+
+.tipos1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.tipos3{
+    color: black;
+    background-color: #5b828d;
+    text-align: justify;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+.tipos1 h2{
+    color: aliceblue;
+    .tipos:hover;
+    cursor: pointer;
+    transform: scale(1.0);
+    transition: transform 0.2s ease;
+}
+
+.tipos1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.tipos4{
+    color: black;
+    background-color: #5b828d;
+    text-align: justify;
+    margin: 20px;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+}
+.tipos1 h2{
+    color: aliceblue;
+    .tipos:hover;
+    cursor: pointer;
+    transform: scale(1.0);
+    transition: transform 0.2s ease;
+}
+
+.tipos1:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+footer{
+    background-color: #18657a;
 }
