@@ -21,7 +21,7 @@ body{
 }
 
 .header img{
-    width: 80px;
+    width: 100px;
     height: auto;
 }
 
@@ -160,13 +160,6 @@ body{
 .flecha.right {
   right: 35px;
 }
-
-
-
-
-
-
-
 
 .layout-grid{
     display: grid;
