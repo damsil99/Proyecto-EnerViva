@@ -57,10 +57,15 @@ body{
     padding: 0;
 }
 
-.logo-header{
+.navbar .logo-header{
     display: flex;
     align-items: center;
     gap: 10px;
+}
+
+.navbar .logo-header:hover {
+    transform: none;
+    transition: none;
 }
 
 .navbar ul li a{
