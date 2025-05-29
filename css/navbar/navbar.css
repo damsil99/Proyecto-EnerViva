@@ -9,12 +9,12 @@
 }
 
 .navbar {
-    background-color: rgb(94, 177, 96); /* opaco al inicio */
+    background-color: rgba(94, 177, 96, 1);/* opaco al inicio */
     transition: background-color 0.3s ease;
 }
 
 .navbar.scrolled {
-    background-color: hsl(121, 35%, 53%); /* más transparente al hacer scroll */
+    background-color: rgba(94, 177, 96, 0.7); /* más transparente al hacer scroll */
 }
 
 .navbar ul{
@@ -83,12 +83,12 @@
 }
 
 .desplegable .submenu{
-    background-color: #5eb160(29, 93, 111, 1); /* opaco al inicio */
+    background-color: rgba(94, 177, 96, 1);  /* opaco al inicio */
     transition: background-color 0.3s ease;
 }
 
 .desplegable .submenu.scrolled {
-    background-color: #5eb160(29, 93, 111, 0.7); /* más transparente al hacer scroll */
+    background-color: rgba(94, 177, 96, 0.7); /* más transparente al hacer scroll */
 }
 
 .desplegable .submenu li{
@@ -123,12 +123,12 @@
 }
 
 .desplegable-team .submenu-team{
-    background-color: rgb(94, 177, 96); /* opaco al inicio */
+    background-color: rgba(94, 177, 96, 1); /* opaco al inicio */
     transition: background-color 0.3s ease;
 }
 
 .desplegable-team .submenu-team.scrolled {
-    background-color: rgb(94, 177, 96); /* más transparente al hacer scroll */
+    background-color: rgba(94, 177, 96, 0.7); /* más transparente al hacer scroll */
 }
 
 .desplegable-team .submenu-team li{
