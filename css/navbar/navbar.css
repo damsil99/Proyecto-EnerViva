@@ -17,7 +17,6 @@
     background-color: hsl(121, 35%, 53%); /* más transparente al hacer scroll */
 }
 
-
 .navbar ul{
     display: flex;
     list-style-type: none;
