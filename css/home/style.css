@@ -340,14 +340,15 @@ body{
 }
 
 .btn-biografia:hover{
-    background-color: lch(49.76% 57.61 143.42);
+    background-color: rgb(75, 130, 0);
 }
 
 
 
 .footer{
-    background-color: hwb(121 37% 31%);
+    background-color: rgb(94, 177, 96);
     color: white;
+    font-weight: bold;
     text-align: center;
     padding: 10px;
 }
