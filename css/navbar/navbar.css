@@ -17,7 +17,6 @@
     background-color: rgba(29, 93, 111, 0.7); /* más transparente al hacer scroll */
 }
 
-
 .navbar ul{
     display: flex;
     list-style-type: none;
