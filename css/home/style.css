@@ -1,6 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to bottom, #009d7f, white);
+    background: linear-gradient(to bottom, #91b194, white);
     color: #333;
     line-height: 1.6;
     margin: 0;
@@ -130,7 +130,7 @@ body{
 }
 
 .energia:hover{
-    background-color: #f0f0f0;
+    background-color: rgb(255, 205, 41);
     transform: scale(1.1);
     transition: transform 0.2s ease;
 }
@@ -340,13 +340,13 @@ body{
 }
 
 .btn-biografia:hover{
-    background-color: #218838;
+    background-color: lch(49.76% 57.61 143.42);
 }
 
 
 
 .footer{
-    background-color: #3fb071;
+    background-color: hwb(121 37% 31%);
     color: white;
     text-align: center;
     padding: 10px;

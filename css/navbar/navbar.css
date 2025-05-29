@@ -1,5 +1,5 @@
 .navbar{
-    background-color: #1d5d6f;
+    background-color: #5eb160;
     color: white;
     margin: 0;
     padding: 0;
@@ -9,12 +9,12 @@
 }
 
 .navbar {
-    background-color: rgba(29, 93, 111, 1); /* opaco al inicio */
+    background-color: rgb(94, 177, 96); /* opaco al inicio */
     transition: background-color 0.3s ease;
 }
 
 .navbar.scrolled {
-    background-color: rgba(29, 93, 111, 0.7); /* más transparente al hacer scroll */
+    background-color: hsl(121, 35%, 53%); /* más transparente al hacer scroll */
 }
 
 .navbar ul{
@@ -63,13 +63,13 @@
 }
 
 .navbar ul li a:hover{
-    color: #3fb071;
+    color: #b6c90e;
 }
 
 
 
 .desplegable .submenu{
-    background-color: #1d5d6f;
+    background-color: #5eb160;
     position: absolute;
     top: 97%;
     display: block;
@@ -83,12 +83,12 @@
 }
 
 .desplegable .submenu{
-    background-color: rgba(29, 93, 111, 1); /* opaco al inicio */
+    background-color: #5eb160(29, 93, 111, 1); /* opaco al inicio */
     transition: background-color 0.3s ease;
 }
 
 .desplegable .submenu.scrolled {
-    background-color: rgba(29, 93, 111, 0.7); /* más transparente al hacer scroll */
+    background-color: #5eb160(29, 93, 111, 0.7); /* más transparente al hacer scroll */
 }
 
 .desplegable .submenu li{
@@ -109,7 +109,7 @@
 
 
 .desplegable-team .submenu-team{
-    background-color: #1d5d6f;
+    background-color:#5eb160;
     position: absolute;
     top: 97%;
     display: block;
@@ -123,12 +123,12 @@
 }
 
 .desplegable-team .submenu-team{
-    background-color: rgba(29, 93, 111, 1); /* opaco al inicio */
+    background-color: rgb(94, 177, 96); /* opaco al inicio */
     transition: background-color 0.3s ease;
 }
 
 .desplegable-team .submenu-team.scrolled {
-    background-color: rgba(29, 93, 111, 0.7); /* más transparente al hacer scroll */
+    background-color: rgb(94, 177, 96); /* más transparente al hacer scroll */
 }
 
 .desplegable-team .submenu-team li{
