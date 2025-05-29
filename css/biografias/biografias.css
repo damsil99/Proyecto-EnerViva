@@ -1,6 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to bottom, #91b194, white);
+    background: linear-gradient(to bottom, #e3f5e0, white);
     color: #333;
     line-height: 1.6;
     margin: 0;
@@ -47,11 +47,12 @@ body{
 }
 
 .biografia-detalles{
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(255, 255, 255, 0.7);
     text-align: center;
     margin: 0;
     padding: 0;
     border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
 }
 
 .biografia-detalles img{
