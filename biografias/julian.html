@@ -7,17 +7,31 @@
     <link rel="stylesheet" href="../css/biografias/biografias.css">
 </head>
 <body>
-    <header id="inicio" class="header">
-        <img src="../img/logo.jpg" alt="EnerViva Logo">
-        <h1>EnerViva</h1>
+    <header id="inicio">
     </header>
-
     <nav class="navbar">
         <ul>
+            <li class="logo-header">
+                <img src="../img/logo.jpg" alt="EnerViva Logo">
+                <h1>EnerViva</h1>            
+            </li>
             <li><a href="../index.html">Inicio</a></li>
-            <li><a href="../index.html#energias-renovables">Energías Renovables</a></li>
+            <li class="desplegable"><a href="../index.html#energias-renovables">Energías Renovables  ▼</a>
+                <ul class="submenu">
+                    <li><a href="../#solar">Solar</a></li>
+                    <li><a href="../#eolica">Eólica</a></li>
+                    <li><a href="../#hidrogeno">Hidrógeno Verde</a></li>
+                    <li><a href="../index.html#hidrogeno">Hidrógeno Verde</a></li>
+                </ul>
+            </li>
             <li><a href="../index.html#sobre-nosotros">Quienes Somos</a></li>
-            <li><a href="../index.html#nuestro-team">Nuestro Equipo</a></li>
+            <li class="desplegable-team"><a href="../index.html#nuestro-team">Nuestro Equipo  ▼</a>
+                <ul class="submenu-team">
+                    <li><a href="../biografias/julian.html">Julian</a></li>
+                    <li><a href="../biografias/luisa.html">Luisa</a></li>
+                    <li><a href="../biografias/daniel.html">Daniel</a></li>
+                </ul>
+            </li>
             <li><a href="../index.html">Contactenos</a></li>
         </ul>
     </nav>
@@ -45,5 +59,7 @@
     <footer class="footer">
         <p>Creado por Julian, Luisa, Daniel: <br>Bootcamp de Programación - 2025</p>
     </footer>
+    
+    <script src="../js/home/equipo.js"></script>
 </body>
 </html>
