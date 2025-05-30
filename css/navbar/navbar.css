@@ -1,4 +1,5 @@
 .navbar {
+    background-color: rgba(94, 177, 96, 1);/* opaco al inicio */
     margin: 0;
     padding: 0;
     position: sticky;
@@ -6,34 +7,23 @@
     z-index: 1000;
 }
 
-.navbar {
-    background-color: rgba(94, 177, 96, 1);/* opaco al inicio */
-    transition: background-color 0.3s ease;
-}
-
-.navbar.scrolled {
-    background-color: rgba(94, 177, 96, 0.7); /* más transparente al hacer scroll */
-}
-
 .navbar ul {
     width: 100%;
+    height: auto;
     display: flex;
     align-items: center;
     list-style-type: none;
     margin: 0;
-    padding: 0;
-    top: 0;    
+    padding: 0; 
     position: sticky;
     z-index: 1000;
-    justify-content: space-around;
-    flex-wrap: wrap;
 }
 
-.navbar li{
-    position: relative; 
+.navbar li {
+    position: relative;
 }
 
-.navbar li a, .logo-header h1{
+.navbar li a, .logo-header h1 {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1.02em;
@@ -41,17 +31,19 @@
     display: block;
     text-decoration: none;
     padding: 0 8px;
+    margin: 20px 0;
 }
 
-.navbar .end{
+.navbar .end {
     margin-right: 50px;
 }
 
-.logo-header h1{
+.logo-header h1 {
+    font-style: italic;
     font-size: 1.7em;
 }
 
-.logo-header{
+.logo-header {
     margin-right: auto;
 }
 
@@ -61,45 +53,46 @@
     transform: scale(1.05);
 }
 
-.navbar .logo-header{
+.navbar .logo-header {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
     padding-left: 50px;
 }
 
-.logo-header img{
-    height: 40px;
+.logo-header img {
+    padding: 0;
+    margin: 0;
+    height: 70px;
 }
 
-.navbar .submenu{
+
+.navbar .submenu {
     display: none;
     position: absolute;
-    top: 205%;
-    left: 0;
-    background-color: #5eb160;
     z-index: 1000;
     flex-direction: column;
 }
 
-.navbar .submenu{
-    background-color: rgba(94, 177, 96, 1);  /* opaco al inicio */
-    transition: background-color 0.3s ease;
+.navbar .submenu li a {
+    margin: 4px 0 0 0;
+    padding: 0 20px;
+    transform: translateY(-23px);
 }
 
-.navbar .submenu.scrolled {
-    background-color: rgba(94, 177, 96, 0.7); /* más transparente al hacer scroll */
-}
-
-.navbar .submenu li a{
-    padding: 5px 16px;
-    justify-content: left;
-    
-}
-
-.desplegable:hover .submenu{
+.desplegable:hover .submenu {
+    background-color: rgba(94, 177, 96, 1);
+    top: 114%;
+    height: auto;
     display: flex;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px; 
+}
 
+.navbar.scrolled{
+    background-color: rgba(94, 177, 96, 0.7);
+}
+
+.navbar.scrolled .submenu {
+    background-color: rgba(94, 177, 96, 0.7);
 }
