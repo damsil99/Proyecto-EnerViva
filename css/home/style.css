@@ -337,7 +337,8 @@ body{
 
 .btn-biografia{
     padding: 10px 20px;
-    background-color: #28a745;
+    background-color: blueviolet;
+    font-weight: bold;
     color: white;
     border: none;
     border-radius: 5px;
@@ -345,7 +346,7 @@ body{
 }
 
 .btn-biografia:hover{
-    background-color: rgb(75, 130, 0);
+    background-color: rgb(126, 0, 150);
 }
 
 
