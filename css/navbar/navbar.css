@@ -1,5 +1,5 @@
 .navbar {
-    background-color: rgba(94, 177, 96, 1);/* opaco al inicio */
+    background-color: rgba(245,245,245, 1);/* opaco al inicio */
     margin: 0;
     padding: 0;
     position: sticky;
@@ -27,7 +27,7 @@
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 1.02em;
-    color: white;
+    color: black;
     display: block;
     text-decoration: none;
     padding: 0 8px;
@@ -41,6 +41,12 @@
 .logo-header h1 {
     font-style: italic;
     font-size: 1.7em;
+    color: blueviolet;
+    text-shadow: 
+        -1px -1px 0 #000,  
+         1px -1px 0 #000,
+        -1px  1px 0 #000,
+         1px  1px 0 #000;
 }
 
 .logo-header {
@@ -49,14 +55,14 @@
 
 
 .navbar li a:hover{
-    color: #b6c90e;
+    color: blueviolet;
     transform: scale(1.05);
 }
 
 .navbar .logo-header {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
     padding-left: 50px;
 }
 
@@ -81,7 +87,7 @@
 }
 
 .desplegable:hover .submenu {
-    background-color: rgba(94, 177, 96, 1);
+    background-color: rgba(245,245,245, 1);
     top: 114%;
     height: auto;
     display: flex;
@@ -90,9 +96,9 @@
 }
 
 .navbar.scrolled{
-    background-color: rgba(94, 177, 96, 0.7);
+    background-color: rgba(245,245,245, 0.7);;
 }
 
 .navbar.scrolled .submenu {
-    background-color: rgba(94, 177, 96, 0.7);
+    background-color: rgba(245,245,245, 0.7);;
 }
