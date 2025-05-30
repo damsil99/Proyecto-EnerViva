@@ -1,6 +1,6 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(to bottom, #91b194, white);
+    background: linear-gradient(to bottom, white, white);
     color: #333;
     line-height: 1.6;
     margin: 0;
@@ -14,8 +14,8 @@ body{
     display: flex;
     gap: 30px;
     align-items: center;
-    background-color: #528938;
-    color:white;
+    background-color: white;
+    color: blueviolet;
     text-align: left;
     padding: 10px 100px;
 }
@@ -28,8 +28,7 @@ body{
 
 
 .navbar{
-    background-color: #81B214;
-    color:white;
+    background-color:rgba(50, 50, 50, 0.1);
     padding: 15px;
     position: sticky;
     top: 0;
@@ -55,14 +54,14 @@ body{
 }
 
 .navbar ul li a{
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: bold;
     transition: color 0.3s;
 }
 
 .navbar ul li a:hover{
-    color: #3fb071;
+    color: blueviolet ;
 }
 
 
@@ -195,7 +194,7 @@ body{
 }
 
 .energia:hover{
-    background-color: #FFCC29;
+    background-color: rgba(138, 100, 100 , 0.1);
     transform: scale(1.1);
     transition: transform 0.2s ease;
 }
@@ -401,7 +400,7 @@ body{
 
 .btn-biografia{
     padding: 10px 20px;
-    background-color: #28a745;
+    background-color: blueviolet;
     color: white;
     border: none;
     border-radius: 5px;
@@ -409,13 +408,13 @@ body{
 }
 
 .btn-biografia:hover{
-    background-color: #218838;
+    background-color: blueviolet;
 }
 
 
 
 .footer{
-    background-color: #81B214;;
+    background-color: black;;
     color: white;
     text-align: center;
     padding: 10px;
