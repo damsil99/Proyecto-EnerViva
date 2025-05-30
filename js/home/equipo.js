@@ -16,22 +16,4 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    window.addEventListener('scroll', function () {
-        const navbar = document.querySelector('.desplegable .submenu');
-        if (window.scrollY > 10) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-
-    window.addEventListener('scroll', function () {
-        const navbar = document.querySelector('.desplegable-team .submenu-team');
-        if (window.scrollY > 10) {
-            navbar.classList.add('scrolled');
-        } else {
-            navbar.classList.remove('scrolled');
-        }
-    });
-
 });

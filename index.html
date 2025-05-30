@@ -8,15 +8,13 @@
     <link rel="stylesheet" href="css/navbar/navbar.css">
 </head>
 <body>
-    <header id="inicio">
-    </header>
-    <nav class="navbar">
-        <ul>
+    <header id="inicio" class="navbar">
+        <ul class="lista">
             <li class="logo-header">
                 <img src="img/logo.jpg" alt="EnerViva Logo">
                 <h1>EnerViva</h1>            
             </li>
-            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#">Inicio</a></li>
             <li class="desplegable"><a href="#energias-renovables">Energías Renovables  ▼</a>
                 <ul class="submenu">
                     <li><a href="solar/solar.html">Energía Solar</a></li>
@@ -26,16 +24,16 @@
                 </ul>
             </li>
             <li><a href="#sobre-nosotros">Quienes Somos</a></li>
-            <li class="desplegable-team"><a href="#nuestro-team">Nuestro Equipo  ▼</a>
-                <ul class="submenu-team">
+            <li class="desplegable"><a href="#nuestro-team">Nuestro Equipo  ▼</a>
+                <ul class="submenu">
                     <li><a href="biografias/julian.html">Julian</a></li>
                     <li><a href="biografias/luisa.html">Luisa</a></li>
                     <li><a href="biografias/daniel.html">Daniel</a></li>
                 </ul>
             </li>
-            <li><a href="#">Contactenos</a></li>
+            <li class="end"><a href="#">Contactenos</a></li>
         </ul>
-    </nav>
+    </header>
 
     <div class="slider-box">
         <ul>
@@ -170,6 +168,16 @@
     <script src="js/home/flecha.js"></script>
     <script src="js/home/equipo.js"></script>
     <script src="js/home/btn-biografia.js"></script>
+    <script>
+    window.addEventListener("scroll", function() {
+        const header = document.querySelector(".navbar");
+        if (window.scrollY > 50) {
+            header.classList.add("scrolled");
+        } else {
+            header.classList.remove("scrolled");
+        }
+    });
+</script>
 
 </body>
 </html>
