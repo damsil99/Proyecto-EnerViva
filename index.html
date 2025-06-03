@@ -7,6 +7,7 @@
     <link rel="icon" href="img/iconoEnerViva.png" type="image/png">
     <link rel="stylesheet" href="css/home/style.css">
     <link rel="stylesheet" href="css/navbar/navbar.css">
+    <link rel="stylesheet" href="css/footer/footer.css">
 </head>
 <body>
     <header id="inicio" class="navbar">
@@ -163,12 +164,72 @@
     </div>
 
     <footer class="footer">
-        <p>Creado por Julian, Luisa, Daniel: <br>Bootcam de Programación - 2025</p>
+        <div class="footer-form">
+            <section class="sectionbox">
+                <div class="footeruno-textouno">
+                    <h2>EnerViva</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis nesciunt dolorum ipsam eos deserunt eligendi voluptatem ipsa, incidunt, totam necessitatibus possimus fugit temporibus nam qui maiores praesentium nemo unde id.</p>
+                </div>
+
+                <div class="footeruno-textodos">
+                    <h2>Escribenos</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur ullam cum expedita aperiam fugiat illum commodi quos minus praesentium itaque, rerum sint non voluptas, et quidem quisquam excepturi in molestiae!</p>
+                </div>
+            </section>
+
+            <section class="sectionbox">
+                <div class="footerdos-textouno">
+                    <h2>Soluciones</h2>
+                    <ul>
+                        <li><a href="#energias-renovables">Energías Renovables</a></li>
+                        <li><a href="#energias-renovables">Energías Renovables</a></li>
+                        <li><a href="#energias-renovables">Energías Renovables</a></li>
+                        <li><a href="#energias-renovables">Energías Renovables</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerdos-textodos">
+                    <h2>Enlaces</h2>
+                    <ul>
+                        <li><a href="#energias-renovables">Energías Renovables</a></li>
+                        <li><a href="#energias-renovables">Energías Renovables</a></li>
+                        <li><a href="#energias-renovables">Energías Renovables</a></li>
+                        <li><a href="#energias-renovables">Energías Renovables</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="sectionbox">
+                <h2>Contactenos</h2>
+                <form action="https://formspree.io/f/mzzgbjoe" method="POST">
+                    <fieldset>
+                        <input type="text" id="name" name="name" required placeholder="Nombre y apellidos">
+                        <input type="email" id="email" name="email" required placeholder="Correo electrónico">
+                        <input type="text" id="cellphone" name="cellphone" required placeholder="Celular">
+                        <textarea id="message" name="message" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </fieldset>
+
+                    <div class="control-btn">
+                        <label for="acepto">
+                            <input type="checkbox" id="acepto" name="acepto"> Acepto términos y condiciones
+                        </label>
+
+                        <button type="submit" class="btn-submit" id="btn-enviar" disabled>Enviar</button>
+                    </div>
+                </form>
+            </section>
+
+        </div>
+
+        <div class="footer-info">
+            <p>Creado por Julian, Luisa, Daniel: Bootcamp de Programación - 2025</p>
+        </div>
     </footer>
 
     <script src="js/home/flecha.js"></script>
     <script src="js/home/equipo.js"></script>
     <script src="js/home/btn-biografia.js"></script>
+    <script src="js/home/encuesta.js"></script>
 
 </body>
 </html>

@@ -79,11 +79,3 @@ body{
     margin-left: 23px;
     color: #000;
 }
-
-.footer{
-    background-color: rgba(0, 0, 0, 1);
-    color: white;
-    font-weight: bold;
-    text-align: center;
-    padding: 10px;
-}
