@@ -10,7 +10,7 @@
 
 <body>
     <header id="inicio" class="header">
-        <img src="img/logo.jpg" alt="EnerViva Logo">
+        <img src="img/logoEnerViva.png" alt="EnerViva Logo">
         <h1>EnerViva-Biomasa</h1>
     </header>
 
@@ -113,7 +113,7 @@
         <h2 class="titulo-seccion2">¿Como se utiliza la Biomasa?</h2>
         <main class="main-content-2">
             <section class="quienes-somos">
-                
+
                 <img src="img/biomasa5.jpg" alt="">
             </section>
 
@@ -129,17 +129,65 @@
             </section>
         </main>
     </div>
+<footer>
+    <section class="formulario">
+    <form action="#" method="post">
+            <legend class="contacto">Contacto</legend>
+            <label for="name"></label> 
+            <input type="text" id="name" name="name" required placeholder="Nombre y Apellido">
+        
+            <br>
+
+            <label for="email"></label> 
+            <input type="email" id="email" name="email" required placeholder="Email">
+            <br>
+            
+            <label for="number"></label>
+            <input type="number" id="number" name="number" required placeholder="Telefono">
+            <br>
+
+            <label for="reason"></label>
+            <select id="reason" name="reason" required pl>
+                <option value="inquiry">Consulta</option>
+                <option value="feedback">Sugerencia</option>
+                <option value="complaint">Queja</option>
+            </select>
+            <br>
+
+            <label for="message"></label>
+            <textarea id="message" name="message" rows="5" cols="40" required placeholder="Dejanos tu Mensaje"></textarea>
+            <br>
+
+            <label>
+            <input type="checkbox" id="termsCheckbox" onclick="toggleButton()"> 
+            Estoy de acuerdo con 
+            <a href="terminos.html" target="_blank">
+            términos y condiciones </a><br>
+            previstos por la empresa.
+            Y al registrar mis <br> datos,
+            Autorizo para que me contacten.
+            </label>
+            <br>
+            <button type="submit">Enviar</button>
+    </form>
+    </section>
+</footer>
+
+<footer class="footer">
+    <p>Creado por Julian, Luisa, Daniel: <br>Bootcam de Programación - 2025</p>
+</footer>
 
 
 
-    <footer class="footer">
-        <p>Creado por Julian, Luisa, Daniel: <br>Bootcam de Programación - 2025</p>
-    </footer>
-
-
-  <script src="js/home/flecha.js"></script>
+<script src="js/home/flecha.js"></script>
+<script>
+            function toggleButton() {
+            const checkbox = document.getElementById('termsCheckbox');
+            const button = document.getElementById('acceptButton');
+            button.disabled = !checkbox.checked;
+        }
+    </script>
 
 </body>
-
 </html>
 

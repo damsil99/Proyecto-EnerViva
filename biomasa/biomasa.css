@@ -280,137 +280,57 @@ body{
 }
 
 
-.layout-grid-3{
-    display: grid;
-    gap: 20px;
-    padding: 20px;
-    grid-template-columns: 1fr;
-    flex: 1;
-}
-
-.main-content-3{
-    padding: 100px 120px;
-    display: grid;
-    gap: 30px;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-}
-
-.titulo-seccion3{
-    grid-column: 1 / -1;
-    text-align: right;
-    font-size: 2em;
-    margin: 50px 150px 0 0;
-    padding: 0;
-    color: rgba(0, 0, 0, 0.7);
-    text-decoration: underline;
-    font-size: 1.5em;
-}
-
-.nuestro-equipo{
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-    text-align: center;
-    position: relative;
-    cursor: pointer;
-    margin: 0;
-    padding: 0;
-    margin: -90px 0 0 10px;
-    padding: 0;
-}
-
-.nuestro-equipo h2{
-    margin: 0;
-    padding: 10px 0 0 0;
-}
-
-.nuestro-equipo h2:hover{
-    color: #3fb071;
-    transition: color 0.3s ease;
-    transform: scale(1.05);
-}
-
-.nuestro-equipo img{
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 15px 0;
-    padding: 0;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-}
-
-.nuestro-equipo img:hover{
-    transform: scale(1.1);
-    transition: transform 0.2s ease;
-}
-
-
-.modal{
-    display: none;
-    position: fixed;
-    z-index: 1001;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
-    align-items: center;
-    justify-content: center;
-    color: black;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-    text-align: center;
-}
-
-.modal-content p{
-    text-align: justify;
-}
-
-.modal-content{
-    background-color: white;
-    margin: auto;
-    padding: 20px;
-    border-radius: 10px;
-    width: 80%;
-    max-width: 600px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
-    position: relative;
-}
-
-.close{
-    position: absolute;
-    top: 10px;
-    right: 20px;
-    color: #aaa;
-    font-size: 24px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: color 0.3s;
-}
-
-.close:hover,
-.close:focus{
-    color: black;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.btn-biografia{
-    padding: 10px 20px;
-    background-color: blueviolet;
+.formulario{
+    background-color: black;
     color: white;
-    border: none;
-    border-radius: 5px;
+    display: flex;
+    justify-content: right;
+    margin-left: 0;
+    padding: 30px;
     cursor: pointer;
 }
 
-.btn-biografia:hover{
-    background-color: blueviolet;
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="reason"],
+select{
+    /* ancho */
+    width: 100%;
+    /* se establece padding */
+    padding: 10px;
+    /* Margeen superior */
+    margin-top: 5px;
+    margin-bottom: 15px;
+    /* propiedades del borde */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    /*  cuadro de texto*/
+    box-sizing: border-box;
 }
 
+label a{
+    color:yellow ;
+}
+
+
+button[type="submit"]{
+    background-color:yellow;
+    /* border:black; */
+    color: black;
+    border: none;
+    width: 100%;
+    padding: 15px  20px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    position: relative;
+}
 
 
 .footer{
