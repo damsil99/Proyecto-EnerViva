@@ -49,8 +49,13 @@ body{
     border: 2px solid rgb(88, 22, 150);
     width: 24%;
     height: 11%;
-    font-size: 1.75em;
+    font-size: clamp(0.8em, 2vw, 2em);
     border-radius: 5px;
+}
+
+.image-principal button:hover{
+    background-color: rgb(88, 22, 150);
+    transform: translate(-50%, -50%) scale(1.02);    
 }
 
 .info-solar{
