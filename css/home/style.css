@@ -13,7 +13,7 @@ body{
 
 .slider-box{
     width: 100%;
-    height: 65vh;
+    height: 77vh;
     padding: 0;
     margin: 0;
     overflow: hidden;
@@ -55,7 +55,7 @@ body{
 
 .slider-box img{
     width: 100%;
-    height: 65vh;
+    height: 77vh;
     object-fit: cover;
     padding: 0;
 }
@@ -110,11 +110,10 @@ body{
 
 .main-content{
     display: grid;
-    gap: 20px;
+    gap: 40px;
     margin: 0;
-    padding: 0;
-    grid-template-columns: repeat(4, 250px);
-    grid-template-rows: repeat(1, 270px);
+    padding: 0 100px;
+    grid-template-columns: repeat(4, 0.5fr);
     justify-content: center;
 }
 
@@ -129,6 +128,7 @@ body{
     color: white;
     padding: 20px;
     border-radius: 10px;
+    width: 90%;
     height: 90%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
@@ -156,7 +156,7 @@ body{
 
 .energia p{
     text-align: justify;
-    font-size: 0.7em;
+    font-size: 0.8em;
 }
 
 
