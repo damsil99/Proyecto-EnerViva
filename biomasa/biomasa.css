@@ -10,6 +10,8 @@ body{
     min-height: 100vh;
 }
 
+
+
 .header{
     display: flex;
     gap: 30px;
@@ -23,6 +25,7 @@ body{
 .header img{
     width: 100px;
     height: auto;
+    
 }
 
 
@@ -118,6 +121,7 @@ body{
     object-fit: cover;
     padding: 0;
     margin-left: 2.5%;
+    border-radius: 5px;
 }
 
 .slider-box:hover{
@@ -283,6 +287,7 @@ body{
 .formulario{
     background-color: black;
     color: white;
+    position: relative;
     display: flex;
     justify-content: right;
     margin-left: 0;
@@ -290,7 +295,10 @@ body{
     cursor: pointer;
 }
 
-
+.contacto{
+    font-size: 40px;
+    width: 100%;
+}
 
 
 input[type="text"],
@@ -298,28 +306,37 @@ input[type="email"],
 input[type="number"],
 input[type="reason"],
 select{
-    /* ancho */
     width: 100%;
-    /* se establece padding */
     padding: 10px;
-    /* Margeen superior */
     margin-top: 5px;
     margin-bottom: 15px;
-    /* propiedades del borde */
-    border: 1px solid #ccc;
+    border: 1px solid white;
     border-radius: 4px;
-    /*  cuadro de texto*/
     box-sizing: border-box;
+    background-color: black;
+    color: white;
+    
 }
 
-label a{
+a[href] {
     color:yellow ;
 }
 
+#message{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    color: white;
+}
 
 button[type="submit"]{
     background-color:yellow;
-    /* border:black; */
     color: black;
     border: none;
     width: 100%;
@@ -331,6 +348,9 @@ button[type="submit"]{
     transition: background-color 0.3s;
     position: relative;
 }
+
+
+
 
 
 .footer{
