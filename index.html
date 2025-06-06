@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/home/style.css">
     <link rel="stylesheet" href="css/navbar/navbar.css">
     <link rel="stylesheet" href="css/footer/footer.css">
+    <link rel="stylesheet" href="css/modalEnergia/modal.css">
 </head>
 <body>
     <header id="inicio" class="navbar">
@@ -74,39 +75,115 @@
 
     <div id="energias-renovables" class="layout-grid">
         <main class="main-content">
-            <a href="solar/solar.html">
-                <section id="#" class="energia">
-                    <img src="img/solar-panel_5383755.png" alt="">
-                    <h2>Solar</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum perspiciatis eligendi ut architecto explicabo alias odio saepe voluptas exercitationem velit placeat sapiente, ipsum quas sequi, autem aut impedit modi quae?</p>
-                </section>
-            </a>
+            <section id="modal-solar" class="energia" onclick="openModal('m-solar')">
+                <img src="img/solar-panel_5383755.png" alt="">
+                <h2>Solar</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum perspiciatis eligendi ut architecto explicabo alias odio saepe voluptas exercitationem velit placeat sapiente, ipsum quas sequi, autem aut impedit modi quae?</p>
+            </section>
 
-            <a href="biomasa/biomasa.html">
-                <section id="#" class="energia">
-                    <img src="img/eco-battery_5383588.png" alt="">
-                    <h2>Biomasa</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel praesentium sed ipsam omnis, dolore odio molestiae animi libero voluptatum reprehenderit. Consequuntur dolorem recusandae sequi, tempora beatae quidem voluptate molestias officiis.</p>
-                </section>
-            </a>
-            
-            <a href="J_Hidraulica/hidaulica.html">
-                <section id="#" class="energia">
-                    <img src="img/hydro-power_18298054.png" alt="">
-                    <h2>Hidraulica</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse placeat modi vero aliquid optio, nihil, aliquam et quis, provident quasi iure voluptate facilis laboriosam sequi dolores nobis. Architecto, fugiat magni.</p>
-                </section>
-            </a>
+            <section id="modal-biomasa" class="energia" onclick="openModal('m-biomasa')">
+                <img src="img/eco-battery_5383588.png" alt="">
+                <h2>Biomasa</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel praesentium sed ipsam omnis, dolore odio molestiae animi libero voluptatum reprehenderit. Consequuntur dolorem recusandae sequi, tempora beatae quidem voluptate molestias officiis.</p>
+            </section>
+        
+            <section id="modal-hidraulica" class="energia" onclick="openModal('m-hidraulica')">
+                <img src="img/hydro-power_18298054.png" alt="">
+                <h2>Hidraulica</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse placeat modi vero aliquid optio, nihil, aliquam et quis, provident quasi iure voluptate facilis laboriosam sequi dolores nobis. Architecto, fugiat magni.</p>
+            </section>
 
-            <a href="J_Eolica/eolica.html">
-                <section id="#" class="energia">
-                    <img src="img/eolic_2241213.png" alt="">
-                    <h2>Eólica</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem illo architecto aperiam, nobis quae ex eum aspernatur dignissimos dicta beatae necessitatibus obcaecati voluptate officiis, assumenda saepe. Odio vel magni maxime!</p>
-                </section>
-            </a>
+            <section id="modal-eolica" class="energia" onclick="openModal('m-eolica')">
+                <img src="img/eolic_2241213.png" alt="">
+                <h2>Eólica</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem illo architecto aperiam, nobis quae ex eum aspernatur dignissimos dicta beatae necessitatibus obcaecati voluptate officiis, assumenda saepe. Odio vel magni maxime!</p>
+            </section>
         </main>
     </div>
+
+    <div id="m-solar" class="modal-energia">
+        <div class="m-content">
+            <span class="close" onclick="closeModal('m-solar')">&times;</span>
+            <h2 data-energia="solar">Calcula Tu Ahorro de Energía Solar</h2>
+            <form class="form_ahorro">
+                <div class="form-group">
+                    <label>Consumo Energético Actual [KWh]</label>
+                    <input type="number" class="consumo" min="0" required>
+                </div>
+                <button type="button" class="btn-calculo">Calcular Ahorro</button>
+            </form>
+        </div>
+    </div>
+
+
+
+    <div id="m-biomasa" class="modal-energia">
+        <div class="m-content">
+            <span class="close" onclick="closeModal('m-biomasa')">&times;</span>
+            <h2 data-energia="biomasa">Calcula Tu Ahorro de Energía Biomasa</h2>
+            <form class="form_ahorro">
+                <div class="form-group">
+                    <label>Consumo Energético Actual [KWh]</label>
+                    <input type="number" class="consumo" min="0" required>
+                </div>
+                <button type="button" class="btn-calculo">Calcular Ahorro</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="m-hidraulica" class="modal-energia">
+        <div class="m-content">
+            <span class="close" onclick="closeModal('m-hidraulica')">&times;</span>
+            <h2 data-energia="hidraulica">Calcula Tu Ahorro de Energía Hidraulica</h2>
+            <form class="form_ahorro">
+                <div class="form-group">
+                    <label>Consumo Energético Actual [KWh]</label>
+                    <input type="number" class="consumo" min="0" required>
+                </div>
+                <button type="button" class="btn-calculo">Calcular Ahorro</button>
+            </form>
+        </div>
+    </div>
+
+
+    <div id="m-eolica" class="modal-energia">
+        <div class="m-content">
+            <span class="close" onclick="closeModal('m-eolica')">&times;</span>
+            <h2 data-energia="eolica">Calcula Tu Ahorro de Energía Eólica</h2>
+            <form class="form_ahorro">
+                <div class="form-group">
+                    <label for="consumo">Consumo Energético Actual [KWh]</label>
+                    <input type="number" class="consumo" min="0" required>
+                </div>
+                <button type="button" class="btn-calculo">Calcular Ahorro</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="resultado" class="resultados hidden">
+        <h2>Resultado Ahorro Energético</h2>
+        <div class="result">
+            <p><strong>Ahorro Energético: </strong><span id="ahorro-kwh"></span><strong>KWh</strong></p>
+            <p><strong>Reducciones de CO<sub>2</sub>: </strong><span id="ahorro-co2"></span><strong>Kg</strong></p>
+            <p><strong>Ahorro Económico Estimado: </strong><span id="ahorro-usd"></span><strong>USD</strong></p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <div id="sobre-nosotros" class="layout-grid-2">
         <h2 class="titulo-seccion2">Sobre Nosotros</h2>
@@ -125,9 +202,10 @@
     <div id="nuestro-team" class="layout-grid-3">
         <h2 class="titulo-seccion3">Nuestro Equipo</h2>
         <main class="main-content-3">
+
             <section id="julian" class="nuestro-equipo" onclick="openModal('modal-julian')">
                 <h2>Julián</h2>
-                <img src="img/logo.jpg" alt="">
+                <img src="img/biografias/fotoPerfilCuadrado.jpg" alt="">
             </section>
 
             <section id="luisa" class="nuestro-equipo" onclick="openModal('modal-luisa')">
@@ -238,6 +316,7 @@
     <script src="js/home/equipo.js"></script>
     <script src="js/home/btn-biografia.js"></script>
     <script src="js/home/encuesta.js"></script>
+    <script src="js/home/btn-calculo.js"></script>
 
 </body>
 </html>
