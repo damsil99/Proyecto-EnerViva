@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biomasa</title>
+    <link rel="stylesheet" href="css/biomasa.css">
+    <link rel="shortcut icon" href="img/iconoEnerViva.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="../index.html">Inicio</a>
+            <a href="#">Energias renovables</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Nuestro Equipo</a>
+            <a href="#">Contactenos</a>
+        </nav>
+    
+
+        <section class="textos-header">
+            <h1>Biomasa</h1>
+            <h2>Biomasa es la unidad de materia
+                orgánica que se utiliza como fuente de energía.
+                Esta materia puede ser
+                proveniente de animales o de plantas,
+                incluyendo residuos orgánicos.</h2>
+        </section>
+
+        <div style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+                style="height: 100%; width: 100%;">
+                <path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z"
+                    style="stroke: none; fill: #fff;"></path>
+            </svg>
+        </div>
+    </header>
+    <main>
+        <section class="contenedor sobre-nosotros">
+            <h2 class="titulo">Biomasa</h2>
+            <div class="contenedor-sobre-nosotros">
+                <img src="img/undraw_data-reports_l2u3.png" alt="" class="imagen-about-us">
+                <div class="contenido-textos">
+                    <h3><span>1</span>Ventajas de Biomasa</h3>
+                    <p>Las ventajas de utilizar la biomasa como fuente de energía:
+                    Se trata de una fuente de energía renovable,
+                    Ayuda a reducir vliúmenes de residuos, con el beneficio extra de darles un uso,
+                    Se encuentra en grandes cantidades,
+                    Es bastante económica.</p>
+
+                    <h3><span>2</span>Desventajas de Biomasa</h3>
+                    <p>Su alcance aún es acotado,
+                    Su rendimiento es menor al de otros tipos de fuentes de energía como los combustibles fósiles,
+                    Se requiere de grandes terrenos disponibles para su producción y para su posterior almacenamiento,
+                    Puede poner en riesgo zonas forestales.</p>
+                </div>
+        </section>
+        </div>
+        <section class="portafolio">
+            <div class="contenedor">
+                <h2 class="titulo">Plantas de Biomasa en el Mundo</h2>
+                <div class="galeria-port">
+                    <div class="imagen-port">
+                        <img src="img/1.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/logoEnerViva.png" alt="">
+                            <p>Ironbridge.  740 MW.  Reino Unido</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/2.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/logoEnerViva.png" alt="">
+                            <p>AlholmensKraft.  265 MW.  Finlandia</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/7.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/logoEnerViva.png" alt="">
+                            <p>Vaasa.  140 MW.  Finlandia</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/3.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/logoEnerViva.png" alt="">
+                            <p>Toppila.  210 MW.  Finlandia</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/5.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/logoEnerViva.png" alt="">
+                            <p>Kymijärvi II.  160 MW.  Finlandia.
+
+</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/4.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/logoEnerViva.png" alt="">
+                            <p>Polaniec. 205 MW. Polonia</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/6.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/logoEnerViva.png" alt="">
+                            <p> Florida Crystals.  140 MW. Estados Unido</p>
+                        </div>
+                    </div>
+                    <div class="imagen-port">
+                        <img src="img/8.jpg" alt="">
+                        <div class="hover-galeria">
+                            <img src="img/logoEnerViva.png" alt="">
+                            <p>kaukaanvoima  125 MW</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="clientes contenedor">
+
+            <h2 class="titulo">Calcula y Contacta</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="contenido-texto-card">
+
+                        <div class="calculadora">
+                            <h1>Calculadora de Energía Biomasa</h1><br>
+                            <label>Masa de Biomasa (kg):</label>
+                            <input type="number" id="consumo" placeholder="Ej: 30"><br><br>
+                            <label>Energía total producida </label>
+                            <input type="number" id="horasSol" placeholder="Ej: 5"><br><br>
+
+                            <button onclick="calcularPaneles()">Calcular</button><br>
+
+                            <h2>Resultado:</h2><br>
+                            <p id="resultado"></p><br>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formulario">
+                    <form action="#" method="post">
+                        <legend class="contacto">Contáctanos</legend>
+                        <label for="name"></label>
+                        <input type="text" id="name" name="name" required placeholder="Nombre y Apellido">
+                        <label for="email"></label>
+                        <input type="email" id="email" name="email" required placeholder="Email">
+                        <label for="number"></label>
+                        <input type="number" id="number" name="number" required placeholder="Telefono">
+                        <label for="reason"></label>
+                        <select id="reason" name="reason" required pl>
+                            <option value="inquiry">Consulta</option>
+                            <option value="feedback">Sugerencia</option>
+                            <option value="complaint">Queja</option>
+                        </select>
+                        <label for="message"></label>
+                        <textarea id="message" name="message" rows="5" cols="40" required
+                            placeholder="Dejanos tu Mensaje"></textarea>
+                        <br>
+                        <label>
+                            <input type="checkbox" id="termsCheckbox" onclick="toggleButton()">
+                            Estoy de acuerdo con
+                            <a href="terminos.html" target="_blank">
+                                términos y condiciones </a><br>
+                            previstos por la empresa.
+                            Y al registrar mis <br> datos,
+                            Autorizo para que me contacten.
+                        </label>
+                        <br>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="about-services">
+            <div class="contenedor">
+                <h2 class="titulo">Paises donde se utiliza la enegia Biomasa</h2>
+                <div class="servicio-cont">
+                    <div class="servicio-ind">
+                        <img src="img/undraw_wind-turbine_4z2a.png" alt="">
+                        <h3>Brasil</h3>
+                        <p>Brasil es líder mundial en la producción de biocombustibles, principalmente etanol de caña de
+                            azúcar.
+                            Las plantas de azúcar también generan electricidad con los residuos de la caña, lo que ha
+                            permitido la diversificación energética.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/undraw_nature-benefits_ak6e.png" alt="">
+                        <h3>Suecia </h3>
+                        <p>Suecia es un referente en el uso de biomasa para generar electricidad y calefacción.Gran parte de su consumo energético proviene de la biomasa
+                            forestal, lo que ha permitido reducir drásticamente su dependencia del carbón y el gas.</p>
+                    </div>
+                    <div class="servicio-ind">
+                        <img src="img/undraw_data-reports_l2u3.png" alt="">
+                        <h3>Finlandia</h3>
+                        <p>Finlandia, al igual que Suecia, cuenta con extensos bosques que proporcionan abundante biomasa.
+
+Gracias a políticas públicas eficientes, más del 30% de la electricidad del país se obtiene a partir de biomasa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+
+
+        <div class="contenedor-footer">
+            <div class="content-foo">
+                <img src="img/whatsapp_2111774.png" alt="">
+                <h4>Phone</h4>
+                <p>123456789</p>
+            </div>
+            <!-- <div class="contenedor-footer"> -->
+            <div class="content-foo">
+                <img src="img/mail.png" alt="">
+                <h4>Email</h4>
+                <p>123456789</p>
+            </div>
+            <!-- <div class="contenedor-footer"> -->
+            <div class="content-foo">
+                <img src="img/ubi.png" alt="">
+                <h4>Location</h4>
+                <p>123456789</p>
+            </div>
+        </div>
+        <h2 class="titulo-final">&copy; Luisa Agudelo</h2>
+    </footer>
+
+    <script src="js/calculadora.js"></script>
+
+</body>
+
+</html>
