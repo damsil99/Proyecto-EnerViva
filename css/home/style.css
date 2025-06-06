@@ -117,12 +117,6 @@ body{
     justify-content: center;
 }
 
-.main-content a{
-    text-decoration: none;
-    padding: 0;
-    margin: 0;
-}
-
 .energia{
     background-color: rgba(100, 100, 100, 1);
     color: white;
@@ -277,6 +271,7 @@ body{
     width: 100%;
     max-width: 300px;
     height: auto;
+    max-height: 300px;
     border-radius: 50%;
     object-fit: cover;
     margin: 20px 0;

@@ -59,6 +59,7 @@ body{
     width: 100%;
     max-width: 300px;
     height: auto;
+    max-height: 300px;
     border-radius: 50%;
     object-fit: cover;
     margin: 10px 0 0 0;
