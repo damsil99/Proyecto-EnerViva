@@ -81,6 +81,12 @@ header a:hover{
     color: blueviolet;
 }
 
+header img{
+    height: 70px;
+    margin: 0;
+    padding: 0;
+}
+
 #hero{
     display: flex;
     align-items: center;
@@ -165,6 +171,45 @@ header a:hover{
     ,url("../media/energia-eolica-y-energia-solar.jpg");
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.modal.mostrar {
+  display: flex;
+}
+
+.modal-contenido {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 80%;
+  text-align: left;
+  position: relative;
+}
+
+.cerrar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.cerrar:hover {
+  color: red;
+}
+
 #paisesUsados .container{
     text-align: center;
     padding: 200px 12px;
@@ -173,6 +218,23 @@ header a:hover{
 #paisesUsados li{
     margin: 15px 0px;
     font-weight: bold;
+}
+
+#graficas{ 
+    text-align: center;
+    padding: 100px 12px;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+
+  
+}
+
+#graficas .grafica{
+    background-color: blue;
+    border-radius: 20px;
+    gap: 10px;
+
 }
 
 #conoceMas{

@@ -5,11 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Energias Eolica - Energias Limpias</title>
     <link rel="stylesheet" href="css/Eolicastyle.css">
+    <link rel="stylesheet" href="css/eolicafooter.css">
 	    	
 </head>
 <body>
     <header class="header">
         <div class="container">
+            <img src="media/logoEnerViva.png" alt="Logo Enerviva">
             <p class="logo">EnerViva - Energias Eolica</p>
             <nav>
                 <a href="inicio">Inicio</a>
@@ -45,21 +47,68 @@
                 <div class="carta">
                     <h3>Caracteristicas</h3>
                     <p>La energía eólica es una fuente de energía renovable que se obtiene del movimiento del viento mediante aerogeneradores, los cuales transforman la energía cinética del aire en electricidad...</p>
-                    <button>+ Info</button>
+                    <button onclick="openModal('modal-caracteristicas')">+ Info</button>
                 </div>
                 <div class="carta">
                     <h3>Ventajas</h3>
                     <p>Ofrece numerosas ventajas como fuente de generación eléctrica. En primer lugar, es una energía renovable e inagotable, ya que se basa en el viento, un recurso natural... </p>
-                    <button>+ Info</button>
+                    <button onclick="openModal('modal-ventajas')">+ Info</button>
                 </div>
                 <div class="carta">
                     <h3>Beneficios</h3>
                     <p>Aporta importantes beneficios tanto ambientales como económicos y sociales. Uno de sus principales beneficios es que no produce emisiones contaminantes...</p>
-                    <button>+ Info</button>
+                    <button onclick="openModal('modal-beneficios')">+ Info</button>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- Modal para el contenido de las caracteristicas -->
+    <div class="modal" id="modal-caracteristicas">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="closeModal('modal-caracteristicas')">&times;</span>
+            <h2>Características de la Energía Eólica</h2>
+                <p>
+                La energía eólica es renovable, limpia y se basa en la fuerza del viento. Utiliza aerogeneradores para transformar
+                la energía cinética del aire en electricidad, lo que permite una producción energética sostenible y sin emisiones
+                contaminantes. No depende de combustibles fósiles, reduce la huella de carbono y permite independencia energética.
+                Además, puede instalarse en zonas rurales o marítimas, generando empleo local. Su impacto ambiental es bajo en
+                comparación con otras fuentes y contribuye a la mitigación del cambio climático. Es una solución viable para el
+                futuro energético del planeta, aprovechando una fuente natural y abundante.
+                </p>
+        </div>
+    </div>
+    <div class="modal" id="modal-ventajas">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="closeModal('modal-ventajas')">&times;</span>
+            <h2>Ventajas de la Energía Eólica</h2>
+                <p>
+                La energía eólica es renovable, limpia y se basa en la fuerza del viento. Utiliza aerogeneradores para transformar
+                la energía cinética del aire en electricidad, lo que permite una producción energética sostenible y sin emisiones
+                contaminantes. No depende de combustibles fósiles, reduce la huella de carbono y permite independencia energética.
+                Además, puede instalarse en zonas rurales o marítimas, generando empleo local. Su impacto ambiental es bajo en
+                comparación con otras fuentes y contribuye a la mitigación del cambio climático. Es una solución viable para el
+                futuro energético del planeta, aprovechando una fuente natural y abundante.
+                </p>
+        </div>
+    </div>
+
+    <div class="modal" id="modal-beneficios">
+        <div class="modal-contenido">
+            <span class="cerrar" onclick="closeModal('modal-beneficios')">&times;</span>
+            <h2>Beneficios</h2>
+                <p>
+                La energía eólica es renovable, limpia y se basa en la fuerza del viento. Utiliza aerogeneradores para transformar
+                la energía cinética del aire en electricidad, lo que permite una producción energética sostenible y sin emisiones
+                contaminantes. No depende de combustibles fósiles, reduce la huella de carbono y permite independencia energética.
+                Además, puede instalarse en zonas rurales o marítimas, generando empleo local. Su impacto ambiental es bajo en
+                comparación con otras fuentes y contribuye a la mitigación del cambio climático. Es una solución viable para el
+                futuro energético del planeta, aprovechando una fuente natural y abundante.
+                </p>
+        </div>
+    </div>
+
+    
 
     <section id="paisesUsados">
         <div class="container">
@@ -78,12 +127,10 @@
     <section id="graficas">
         <div class="container">
             <h2>Aca van las graficas de cada energia</h2>
-            <ul>
-                <li>grafica1</li>
-                <li>grafica2</li>
-                <li>grafica1</li>
-                <li>grafica1</li>
-            </ul>
+            <div class="grafica">Grafica1 <br>- 
+                Torta</div>
+            <div class="grafica">Grafica2 - Barras</div>
+            <div class="grafica">Grafica3 - Tendencia</div>
         </div>
 
     </section>
@@ -92,12 +139,78 @@
         <h2>Conoce mas de Energía Eólica</h2>
         <button>Ver +</button>
     </section>
+ 
 
-    <footer>
+<footer class="footer" id="contactenos">
+    <div class="footer-form">
+       <section class="sectionbox">
+            <div class="footeruno-textouno">
+                <h2>Enerviva</h2>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere esse sapiente veniam dolores asperiores, consectetur expedita incidunt ea minus, iure tempore quidem quae vitae officiis sed! Asperiores placeat doloribus soluta!</p>
+            </div>
+
+            <div class="footeruno-textodos">
+                <h2>Escribenos</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsam vel. A hic aspernatur minus quisquam voluptatibus quae accusamus, provident illum aliquam consectetur qui commodi veniam sapiente odit dolorum soluta!</p>
+            </div>
+       </section>
+
+       <section class="sectionbox">
+            <div class="footerdos-textouno">
+                <h2>Soluciones</h2>
+                <ul>
+                    <li><a href="#energias-renovables">Energías Renovables</a></li>
+                    <li><a href="#energias-renovables">Energías Renovables</a></li>
+                    <li><a href="#energias-renovables">Energías Renovables</a></li>
+                    <li><a href="#energias-renovables">Energías Renovables</a></li>
+                </ul>
+            </div>
+
+            <div class="footerdos-textodos">
+                <h2>Enlaces</h2>
+                <ul>
+                    <li><a href="#energias-renovables">Enlaces</a></li>
+                    <li><a href="#energias-renovables">Enlaces</a></li>
+                    <li><a href="#energias-renovables">Enlaces</a></li>
+                    <li><a href="#energias-renovables">Enlaces</a></li>                   
+                </ul>
+            </div>    
+       </section>
+
+       <section class="sectionbox">
+        <h2>Contactenos</h2>
+        <form action="https://formspree.io/f/mrbqybnn" method="post">
+            <fieldset>
+                <input type="text" id="name" name="name" required placeholder="Nombre y Apellidos">
+                <input type="email" name="email" id="email" required placeholder="Correo electrónico">
+                <input type="text" name="cellphone" id="cellphone" required placeholder="Celular">
+                <textarea name="message" id="message" required placeholder="Escribe tu mensaje aqui..."></textarea>
+            </fieldset>
+
+            <div class="control-btn">
+                <label for="Acepto">
+                    <input type="checkbox" id="acepto" name="acepto">Acepto terminos y condiciones
+                </label>
+
+                <button type="submit" class="btn-submit" id="btn-enviar">Enviar</button>
+            </div>
+        </form>     
+       </section>
+    </div>
+
+    <div class="footer-info">
+        <p>Creado por Julian Correa - Luisa Agudelo - Daniel Mosquera <br> Bootcamp TalentoTech 2025</p>
+    </div>
+
+</footer>
+
+<script src="js/contacto.js"></script>
+<script src="js/modales.js"></script>
+    <!-- <footer>
         <div class="container">
             <p>&copy; Enerviva - Energias Limpias</p>
         </div>
-    </footer>
+    </footer> -->
 
 
 </body>
