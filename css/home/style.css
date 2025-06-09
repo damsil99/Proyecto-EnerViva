@@ -60,6 +60,13 @@ body{
     padding: 0;
 }
 
+.slider-box .slider-text:hover{
+    transform: scale(1.04);
+    color: yellow;
+    cursor: pointer;
+}
+
+
 
 @keyframes slide{
     0% {margin-left: 0;}
@@ -215,7 +222,7 @@ body{
 
 
 .layout-grid-3{
-    background-color: rgba(50, 50, 50, 1);;
+    background-color: rgba(50, 50, 50, 1);
     display: grid;
     gap: 20px;
     padding: 20px;
@@ -243,7 +250,7 @@ body{
 }
 
 .nuestro-equipo{
-    background-color: rgba(200,200,200, 1);;
+    background-color: rgba(200,200,200, 1);
     padding: 20px;
     border-radius: 10px;
     text-align: center;

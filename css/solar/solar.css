@@ -122,3 +122,165 @@ body{
     text-decoration: none;
     color: inherit;
 }
+
+.main-energia-solar{
+    display: grid;
+    gap: 20px;
+    margin: 100px 0;
+    padding: 100px 150px;
+    background-color: rgba(50, 50, 50, 1);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "item1 item1"
+        "item2 item3"
+        "item2 item4"
+        "item2 item5";
+}
+
+.item:nth-child(1){grid-area: item1;}
+.item:nth-child(2){grid-area: item2;}
+.item:nth-child(3){grid-area: item3;}
+.item:nth-child(4){grid-area: item4;}
+.item:nth-child(5){grid-area: item5;}
+
+.item{
+    background-color: rgba(200,200,200, 1);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: justify;
+}
+
+.item h2{
+    text-align: center;
+}
+
+.ventajas-desventajas{
+    display: grid;
+    gap: 10px;
+    margin: 50px 0;
+    padding: 0 150px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "item11 item12"
+        "item11 item13";
+}
+
+.item1:nth-child(1){grid-area: item11;}
+.item1:nth-child(2){grid-area: item12;}
+.item1:nth-child(3){grid-area: item13;}
+
+.item1{
+    background-color: rgba(200,200,200, 1);
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+.item1 ul li{
+    text-align: justify;
+}
+
+.ahorro-solar{
+    background-color: rgba(50, 50, 50, 0.8);
+    color: black;
+    padding: 50px;
+    justify-items: center;
+    position: relative;
+}
+
+.ahorro-solar .h2-prinp{
+    font-weight: bold;
+    font-size: 38px;
+    color: white;
+    
+}
+
+.solar-energia p{
+    text-align: center;
+}
+
+.a-solar{
+    background-color: white;
+    padding: 25px;
+    width: 100%;
+    max-width: 415px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    justify-items: center;
+}
+
+.a-solar h2{
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
+
+
+.form-group{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="number"]{
+    margin: 0;
+    margin-top: 20px;
+    padding: 10px;
+    color: black;
+    border: 1.5px solid black;
+    border-radius: 4px;
+    font-size: 1rem;
+    height: 1.2rem;
+}
+
+.btn-calculo{
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: blueviolet;
+    font-weight: bold;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid rgb(88, 22, 150);
+    align-items: center;
+}
+
+.btn-calculo:hover{
+    background-color: rgb(126, 0, 150);
+}
+
+
+.resultados{
+    margin-top: 50px;
+    background-color: white;
+    width: 100%;
+    max-width: 415px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.resultados h2{
+    margin-bottom: 10px;
+    padding: 0;
+    text-align: center;
+}
+
+.result{
+    background-color: #989898;
+    padding: 5px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.hidden{
+    display: none;
+}
