@@ -23,6 +23,7 @@
                     <li><a href="#biomasa">Energía Biomasa</a></li>
                 </ul>
             </li>
+            <li><a href="#energias-renovables">Calcula tus Ahorros</a></li>
             <li><a href="../index.html#sobre-nosotros">Quienes Somos</a></li>
             <li class="desplegable"><a href="#nuestro-team">Nuestro Equipo  ▼</a>
                 <ul class="submenu">
@@ -36,7 +37,7 @@
     </header>
 
     <div class="image-principal">
-        <img src="../img/logo.jpg" alt="Parque Solar">
+        <img src="img/PagPrincipalEnergiaSolar.jpg" alt="Parque Solar">
         <h2>Energía Solar</h2>
         <button class="btn-calculo" id="calculo-btn">Calcula tus ahorros</button>
     </div>
@@ -75,40 +76,40 @@
 
     <div class="info-energia-solar">
         <main class="main-energia-solar">
-            <section>
+            <section class="item">
                 <h2>¿Qué es la Energía Solar?</h2>
                 <p>La energía solar es la energía que proviene del sol y que puede ser convertida en energía térmica o eléctrica. Esta fuente de energía renovable es inagotable y se puede aprovechar a través de tecnologías como los paneles solares fotovoltaicos y los colectores solares térmicos.</p>
             </section>
 
-            <section>
+            <section class="item">
                 <h2>¿Cómo funciona la Energía Solar?</h2>
                 <p>La energía solar se puede aprovechar de dos maneras principales: mediante la conversión directa de la luz solar en electricidad a través de paneles fotovoltaicos, o mediante la captación del calor del sol para calentar agua o espacios mediante colectores solares térmicos.</p>
             </section>
 
-            <section>
+            <section class="item">
                 <h2>¿Cuáles son los tipos de Energía Solar?</h2>
                 <p>Existen dos tipos principales de energía solar: la energía solar fotovoltaica, que convierte la luz solar en electricidad, y la energía solar térmica, que utiliza el calor del sol para calentar agua o espacios. Ambas tecnologías tienen aplicaciones en residencias, industrias y sistemas de calefacción.</p>
             </section>
 
-            <section>
+            <section class="item">
                 <h2>¿Cuáles son los beneficios de la Energía Solar?</h2>
                 <p>La energía solar ofrece múltiples beneficios, como la reducción de las emisiones de gases de efecto invernadero, la disminución de la dependencia de combustibles fósiles, el ahorro en costos de electricidad a largo plazo y la creación de empleos en el sector de energías renovables.</p>
             </section>
 
-            <section>
+            <section class="item">
                 <h2>¿Cómo se instala un sistema de Energía Solar?</h2>
                 <p>La instalación de un sistema de energía solar implica la evaluación del sitio, la selección de los componentes adecuados (paneles solares, inversores, baterías), la instalación física de los paneles y el cableado, y la conexión al sistema eléctrico existente. Es recomendable contar con profesionales especializados para garantizar una instalación segura y eficiente.</p>
             </section>
         </main>
     </div>
 
-    <div class="ventajas">
-        <main>
-            <section>
+    <div>
+        <main class="ventajas-desventajas">
+            <section class="item1">
                 <img src="../img/logo.jpg" alt="">
             </section>
 
-            <section>
+            <section class="item1">
                 <h2>Ventajas de la Energía Solar</h2>
                 <ul>
                     <li>Es una fuente de energía renovable e inagotable.</li>
@@ -117,17 +118,9 @@
                     <li>Puede generar ahorros significativos en las facturas de electricidad.</li>
                     <li>Fomenta el desarrollo tecnológico y la innovación.</li>
                 </ul>
-            </section>            
-        </main>
-    </div>
+            </section>       
 
-    <div class="desventajas">
-        <main>
-            <section>
-                <img src="../img/logo.jpg" alt="">
-            </section>
-
-            <section>
+            <section class="item1">
                 <h2>Desventajas de la Energía Solar</h2>
                 <ul>
                     <li>La producción de energía solar puede ser intermitente, dependiendo de las condiciones climáticas.</li>
@@ -135,13 +128,56 @@
                     <li>Requiere espacio para la instalación de paneles solares.</li>
                     <li>La eficiencia de los paneles solares puede verse afectada por la suciedad o el polvo acumulado.</li>
                 </ul>
-            </section>            
+            </section>          
         </main>
     </div>
+
+    <div id="calculadora" class="ahorro-solar">
+        <h2 class="h2-prinp">Calcula</h2>
+        <div class="a-solar">
+            <h2 data-energia="solar">Calcula Tu Ahorro de Energía Solar</h2>
+            <form class="form_ahorro">
+                <div class="form-group">
+                    <label for="consumo">Consumo Energético Actual [KWh]</label>
+                    <input type="number" class="consumo" min="0" required>
+                </div>
+            </form>  
+            <button type="button" class="btn-calculo">Calcular Ahorro</button>
+        </div>
+
+        <div id="resultado" class="resultados hidden">
+            <h2>Resultado Ahorro Energético</h2>
+            <div class="result">
+                <p><strong>Ahorro Energético: </strong><span id="ahorro-kwh"></span><strong>KWh</strong></p>
+                <p><strong>Reducciones de CO<sub>2</sub>: </strong><span id="ahorro-co2"></span><strong>Kg</strong></p>
+                <p><strong>Ahorro Económico Estimado: </strong><span id="ahorro-usd"></span><strong>USD</strong></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="paises">
+        <h2>Países donde más se utiliza la energía solar</h2>
+        <main>
+            <section class="item2">
+
+            </section>
+
+            <section class="item2">
+
+            </section>
+
+            <section class="item2">
+
+            </section>
+        </main>
+    </div>
+
 
     <div class="graficas">
         <h2>Graficas</h2>
     </div>
+
+    <script src="js/btn-solar.js"></script>
 
 </body>
 </html>

@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.querySelectorAll('.btn-calculo').forEach(boton => {
         boton.addEventListener('click', function(){ 
-            const form = this.closest('.a-solar');
-            const consumoInput = form.querySelector('.consumo')
+            const solar = this.closest('.a-solar');
+            const consumoInput = solar.querySelector('.consumo')
             const consumo = parseFloat(consumoInput.value);
 
         if(isNaN(consumo) || consumo <= 0){
@@ -15,26 +15,7 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
-        const h2 = form.closest('.m-content').querySelector('h2');
-        const tipoEnergia = h2.dataset.energia;
-
-        let factorAhorro;
-        switch(tipoEnergia){
-            case "solar":
-                factorAhorro = 0.2;
-                break;
-            case "biomasa":
-                factorAhorro = 0.25;
-                break;
-            case "hidraulica":
-                factorAhorro = 0.3;
-                break;
-            case "eolica":
-                factorAhorro = 0.4;
-                break;
-            default:
-                factorAhorro = 0;
-        }
+        let factorAhorro = 0.2;
 
         const ahorroEnergetico = consumo * factorAhorro;
         const reduccionCo2 = ahorroEnergetico * 0.5;
