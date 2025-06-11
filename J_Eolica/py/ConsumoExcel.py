@@ -50,7 +50,7 @@ valores= [
 plt.figure(figsize=(12,7))
 
 # 4. Crear la gráfica de pastel
-colores = ["#FFD700", "#87CEEB", "#4E5CED", "#F8B687"]  # Amarillo solar, azul eólica, verde hidráulica, marrón biomasa
+colores = ["#EFD74E", "#87CEEB", "#4E5CED", "#F8B687"]  # Amarillo solar, azul eólica, verde hidráulica, marrón biomasa
 plt.pie(valores, labels=energias, autopct='%1.1f%%', startangle=140, colors=colores, explode=[0.2,0.2,0.5,0.2])
 
 plt.title(f"Participacion de las energias Renovables en Colombia - {ultimoAnio}", fontsize=18)
