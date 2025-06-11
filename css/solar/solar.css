@@ -76,6 +76,10 @@ body{
     justify-content: center;
 }
 
+.main-content ul li{
+    font-size: 1.1em;
+}
+
 .energia-solar{
     background-color: rgba(100, 100, 100, 1);
     color: white;
@@ -83,7 +87,6 @@ body{
     border-radius: 10px;
     width: 90%;
     height: 90%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
     position: relative;
     cursor: pointer;
@@ -94,6 +97,7 @@ body{
     color: black;
     transform: scale(1.1);
     transition: transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .energia-solar img{
