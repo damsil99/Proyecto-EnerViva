@@ -13,11 +13,7 @@
     grid-template-columns: 1fr;
     flex: 1;
 }
-<<<<<<< HEAD
 
-
-=======
->>>>>>> e2687bf943a9b18b9b57314d323e9ce532e6fad5
 .grafico .titulo-grafico{
     grid-column: 1 / -1;
     text-align: right;
@@ -28,10 +24,6 @@
     font-size: 1.7em;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> e2687bf943a9b18b9b57314d323e9ce532e6fad5
 .grafico h2{
     text-align: right;
     font-weight: bold;
