@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/navbar/navbar.css">
     <link rel="stylesheet" href="css/footer/footer.css">
     <link rel="stylesheet" href="css/modalEnergia/modal.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header id="inicio" class="navbar">
@@ -116,8 +117,6 @@
         </div>
     </div>
 
-
-
     <div id="m-biomasa" class="modal-energia">
         <div class="m-content">
             <span class="close" onclick="closeModal('m-biomasa')">&times;</span>
@@ -132,7 +131,6 @@
         </div>
     </div>
 
-
     <div id="m-hidraulica" class="modal-energia">
         <div class="m-content">
             <span class="close" onclick="closeModal('m-hidraulica')">&times;</span>
@@ -146,7 +144,6 @@
             </form>
         </div>
     </div>
-
 
     <div id="m-eolica" class="modal-energia">
         <div class="m-content">
@@ -171,6 +168,8 @@
         </div>
     </div>
 
+
+
     <div id="sobre-nosotros" class="layout-grid-2">
         <h2 class="titulo-seccion2">Sobre Nosotros</h2>
         <main class="main-content-2">
@@ -184,6 +183,61 @@
             </section>
         </main>
     </div>
+
+    <div class="graficos">
+        <section class="grafico">
+            <h2>Análisis Gráficos</h2>
+            <h2 class="produccion-energia">Produccion</h2>
+            <label for="pais2">País: </label>
+            <select name="pais2" id="pais2">
+                <option value="" disabled selected> Seleccione una opción</option>
+            </select>
+            <label for="energia-type2">Tipo de Enegría: </label>
+            <select name="energia-type2" id="energia-type2">
+                <option value="" disabled selected> Seleccione una opción</option>
+            </select>
+            <label for="tipo-grafica2">Tipo de grafica: </label>
+            <select name="tipo-grafica2" id="tipo-grafica2">
+                <option value="" disabled selected>Seleccione una opción</option>
+            </select>
+            <label for="comparar-pais2">
+                <input type="checkbox" id="habilita2" name="habilita2"> Comparar con pais
+            </label>
+            <label for="pais21">País: </label>
+            <select name="pais21" id="pais21">
+                <option value="" disabled selected> Seleccione una opción</option>
+            </select>
+            <canvas id="graficos-energias2"></canvas>
+        </section>
+    </div>
+
+
+    <div class="graficos">
+        <section class="grafico">
+            <h2 class="consumo-energia">Consumo</h2>
+            <label for="pais">País: </label>
+            <select name="pais" id="pais">
+                <option value="" disabled selected> Seleccione una opción</option>
+            </select>
+            <label for="energia-type">Tipo de Enegría: </label>
+            <select name="energia-type" id="energia-type">
+                <option value="" disabled selected> Seleccione una opción</option>
+            </select>
+            <label for="tipo-grafica">Tipo de grafica: </label>
+            <select name="tipo-grafica" id="tipo-grafica">
+                <option value="" disabled selected>Seleccione una opción</option>
+            </select>
+            <label for="comparar-pais">
+                <input type="checkbox" id="habilita" name="habilita"> Comparar con pais
+            </label>
+            <label for="pais1">País: </label>
+            <select name="pais1" id="pais1">
+                <option value="" disabled selected> Seleccione una opción</option>
+            </select>
+            <canvas id="graficos-energias"></canvas>
+        </section>
+    </div>
+
 
     <div id="nuestro-team" class="layout-grid-3">
         <h2 class="titulo-seccion3">Nuestro Equipo</h2>
@@ -206,8 +260,6 @@
         </main>
     </div>
 
-
-    
     <div id="modal-julian" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal-julian')">&times;</span>
@@ -303,6 +355,8 @@
     <script src="js/home/btn-biografia.js"></script>
     <script src="js/home/encuesta.js"></script>
     <script src="js/home/btn-calculo.js"></script>
+    <script src="js/home/pais-energia-consumo.js"></script>
+    <script src="js/home/pais-energia-produccion.js"></script>
 
 </body>
 </html>
