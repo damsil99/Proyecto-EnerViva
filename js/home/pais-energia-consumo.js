@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch('data/consumo.json')
+    fetch("data/consumo.json")
         .then(response => response.json())
         .then(data => {
             const paisSelect = document.getElementById("pais");
