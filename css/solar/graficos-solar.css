@@ -1,4 +1,5 @@
 .graficos{
+    background-color: rgba(50, 50, 50, 1);
     display: grid;
     padding: 5px 50px;
     grid-template-columns: 1fr;
