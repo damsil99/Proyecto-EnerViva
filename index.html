@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,15 +13,16 @@
     <link rel="stylesheet" href="css/graficas/graficas.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
+
 <body>
     <header id="inicio" class="navbar">
         <ul class="lista">
             <li class="logo-header">
                 <img src="img/logoEnerViva.png" alt="EnerViva Logo">
-                <h1>EnerViva</h1>            
+                <h1>EnerViva</h1>
             </li>
             <li><a href="#">Inicio</a></li>
-            <li class="desplegable"><a href="#">Energías Renovables  ▼</a>
+            <li class="desplegable"><a href="#">Energías Renovables ▼</a>
                 <ul class="submenu">
                     <li><a href="solar/solar.html">Energía Solar</a></li>
                     <li><a href="Biomasa1/biomasa.html">Energía Biomasa</a></li>
@@ -30,7 +32,8 @@
             </li>
             <li><a href="#energias-renovables">Calcula tus Ahorros</a></li>
             <li><a href="#sobre-nosotros">Sobre Nosotros</a></li>
-            <li class="desplegable"><a href="#nuestro-team">Nuestro Equipo  ▼</a>
+            <li><a href="#graficos">Graficas</a></li>
+            <li class="desplegable"><a href="#nuestro-team">Nuestro Equipo ▼</a>
                 <ul class="submenu">
                     <li><a href="biografias/julian.html">Julian</a></li>
                     <li><a href="biografias/luisa.html">Luisa</a></li>
@@ -47,30 +50,36 @@
                     <img id="slider1" src="img/solar.png" alt="Parque solar">
                     <div class="slider-text">
                         <h2>Energía Solar</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                    </div>    
-            </a></li>
-            <li>
-                <img id="slider2" src="img/biomasa.png" alt="Fabrica de biomasa">
-                <div class="slider-text">
-                    <h2>Imagen 2</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                </div>
-            </li>
-            <li>
-                <img id="slider3" src="img/hidraulica.png" alt="Represa gidroeléctrica">
-                <div class="slider-text">
-                    <h2>Imagen 3</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                </div>
-            </li>
-            <li>
-                <img id="slider4" src="img/eolica.png" alt="Parque eólico">
-                <div class="slider-text">
-                    <h2>Imagen 4</h2>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
-                </div>
-            </li>
+                        <p>La energía solar es la energía que proviene del sol y que puede ser convertida en energía
+                            térmica o eléctrica. </p>
+                    </div>
+                </a></li>
+            <li><a href="Biomasa1/biomasa.html">
+                    <img id="slider2" src="img/biomasa.png" alt="Fabrica de biomasa">
+                    <div class="slider-text">
+                        <h2>Energía Biomasa</h2>
+                        <p>Es una energía renovable porque proviene de recursos naturales que se regeneran, y se utiliza
+                            para generar calor, electricidad o biocombustibles como el bioetanol.
+                        </p>
+                    </div>
+            </li></a>
+            <li><a href="J_Hidraulica/hidraulica.html">
+                    <img id="slider3" src="img/hidraulica.png" alt="Represa gidroeléctrica">
+                    <div class="slider-text">
+                        <h2>Energía Hidráulica</h2>
+                        <p>La energía hidráulica es la que se obtiene del movimiento del agua, como ríos o cascadas,
+                            para generar electricidad.
+                        </p>
+                    </div>
+            </li></a>
+            <li><a href="J_Eolica/eolica.html">
+                    <img id="slider4" src="img/eolica.png" alt="Parque eólico">
+                    <div class="slider-text">
+                        <h2>Energía Eólica</h2>
+                        <p> La energía solar es la que se obtiene del Sol y se transforma en electricidad o calor.
+                        </p>
+                    </div>
+            </li></a>
         </ul>
         <button class="flecha left" onclick="moveSlide(-1)">&#10094;</button>
         <button class="flecha right" onclick="moveSlide(1)">&#10095;</button>
@@ -80,26 +89,30 @@
         <main class="main-content">
             <section id="modal-solar" class="energia" onclick="openModal('m-solar')">
                 <img src="img/solar-panel_5383755.png" alt="">
-                <h2>Solar</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum perspiciatis eligendi ut architecto explicabo alias odio saepe voluptas exercitationem velit placeat sapiente, ipsum quas sequi, autem aut impedit modi quae?</p>
+                <h2>Ahorro Energía Solar</h2>
+                <p>La energía solar capta la luz del sol mediante paneles fotovoltaicos o colectores térmicos para
+                    producir electricidad o agua caliente de forma limpia y sostenible.</p><br><strong>Calcula aqui</strong>👆🏻
             </section>
 
             <section id="modal-biomasa" class="energia" onclick="openModal('m-biomasa')">
                 <img src="img/eco-battery_5383588.png" alt="">
-                <h2>Biomasa</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel praesentium sed ipsam omnis, dolore odio molestiae animi libero voluptatum reprehenderit. Consequuntur dolorem recusandae sequi, tempora beatae quidem voluptate molestias officiis.</p>
+                <h2>Ahorro Energía Biomasa</h2>
+                <p>La energía de biomasa proviene de materiales orgánicos como restos de madera, cultivos o residuos
+                    animales, y se utiliza para generar calor, electricidad o combustibles renovables..</p><br><strong>Calcula aqui</strong>👆🏻
             </section>
-        
+
             <section id="modal-hidraulica" class="energia" onclick="openModal('m-hidraulica')">
                 <img src="img/hydro-power_18298054.png" alt="">
-                <h2>Hidraulica</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Esse placeat modi vero aliquid optio, nihil, aliquam et quis, provident quasi iure voluptate facilis laboriosam sequi dolores nobis. Architecto, fugiat magni.</p>
+                <h2>Ahorro Energía Hidraulica</h2>
+                <p>La energía hidráulica se genera aprovechando el movimiento del agua, usualmente en ríos o presas,
+                    para accionar turbinas que producen electricidad de manera continua.</p><br><strong>Calcula aqui</strong>👆🏻
             </section>
 
             <section id="modal-eolica" class="energia" onclick="openModal('m-eolica')">
                 <img src="img/eolic_2241213.png" alt="">
-                <h2>Eólica</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rem illo architecto aperiam, nobis quae ex eum aspernatur dignissimos dicta beatae necessitatibus obcaecati voluptate officiis, assumenda saepe. Odio vel magni maxime!</p>
+                <h2>Ahorro Energía Eólica</h2>
+                <p>La energía eólica transforma la fuerza del viento en electricidad utilizando aerogeneradores, siendo
+                    una fuente renovable que no emite contaminantes durante su funcionamiento.</p><br><strong>Calcula aqui</strong>👆🏻
             </section>
         </main>
     </div>
@@ -175,20 +188,23 @@
         <h2 class="titulo-seccion2">Sobre Nosotros</h2>
         <main class="main-content-2">
             <section class="quienes-somos">
-                <img src="img/logo.jpg" alt="">
+                <img src="img/logoEnerViva.png" alt="">
             </section>
 
             <section class="quienes-somos">
-                <h2>Otra Sección</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis odio necessitatibus explicabo quis. Praesentium expedita obcaecati eos? Deserunt similique dolore esse commodi quisquam natus reprehenderit, aliquam consectetur? Ad, excepturi reiciendis!</p>
+                <h2>EnerViva</h2>
+                <p>Enerviva es una iniciativa dedicada a promover el uso de energías limpias y sostenibles en
+                    Colombia, enfocándose especialmente en fuentes como la energía eólica e hidráulica. Busca
+                    educar, concienciar y fomentar el desarrollo de tecnologías verdes, contribuyendo así al cuidado
+                    del medio ambiente y a un futuro más sostenible.</p>
             </section>
         </main>
     </div>
 
 
-    <div class="graficos">
+    <div class="graficos" id="graficos">
         <section class="grafico">
-            <h2>Análisis Gráficos</h2>
+            <h2 class="titulo-grafico">Análisis Gráficos</h2>
             <h2 class="produccion-energia">Producción</h2>
             <div class="contenedor-desplegable">
                 <div class="col-izq">
@@ -219,9 +235,7 @@
             </div>
             <canvas id="graficos-energias2"></canvas>
         </section>
-    </div>
 
-    <div class="graficos">
         <section class="grafico">
             <h2 class="consumo-energia">Consumo</h2>
             <div class="contenedor-desplegable">
@@ -281,7 +295,9 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal-julian')">&times;</span>
             <h2>Julián</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique dolore voluptatibus corrupti laudantium consectetur corporis? Ipsam deleniti, ipsum eveniet vel quaerat laudantium a, neque officia porro dolore optio nesciunt?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique dolore voluptatibus corrupti
+                laudantium consectetur corporis? Ipsam deleniti, ipsum eveniet vel quaerat laudantium a, neque officia
+                porro dolore optio nesciunt?</p>
             <button class="btn-biografia" id="btn-julian">Biografía</button>
         </div>
     </div>
@@ -290,7 +306,9 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal-luisa')">&times;</span>
             <h2>Luisa</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique dolore voluptatibus corrupti laudantium consectetur corporis? Ipsam deleniti, ipsum eveniet vel quaerat laudantium a, neque officia porro dolore optio nesciunt?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique dolore voluptatibus corrupti
+                laudantium consectetur corporis? Ipsam deleniti, ipsum eveniet vel quaerat laudantium a, neque officia
+                porro dolore optio nesciunt?</p>
             <button class="btn-biografia" id="btn-luisa">Biografía</button>
         </div>
     </div>
@@ -299,7 +317,9 @@
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal-daniel')">&times;</span>
             <h2>Daniel</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique dolore voluptatibus corrupti laudantium consectetur corporis? Ipsam deleniti, ipsum eveniet vel quaerat laudantium a, neque officia porro dolore optio nesciunt?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi similique dolore voluptatibus corrupti
+                laudantium consectetur corporis? Ipsam deleniti, ipsum eveniet vel quaerat laudantium a, neque officia
+                porro dolore optio nesciunt?</p>
             <button class="btn-biografia" id="btn-daniel">Biografía</button>
         </div>
     </div>
@@ -309,12 +329,16 @@
             <section class="sectionbox">
                 <div class="footeruno-textouno">
                     <h2>EnerViva</h2>
-                    <p>Enerviva es una iniciativa dedicada a promover el uso de energías limpias y sostenibles en Colombia, enfocándose especialmente en fuentes como la energía eólica e hidráulica. Busca educar, concienciar y fomentar el desarrollo de tecnologías verdes, contribuyendo así al cuidado del medio ambiente y a un futuro más sostenible.</p>
+                    <p>Enerviva es una iniciativa dedicada a promover el uso de energías limpias y sostenibles en
+                        Colombia, enfocándose especialmente en fuentes como la energía eólica e hidráulica. Busca
+                        educar, concienciar y fomentar el desarrollo de tecnologías verdes, contribuyendo así al cuidado
+                        del medio ambiente y a un futuro más sostenible.</p>
                 </div>
 
                 <div class="footeruno-textodos">
                     <h2>Escribenos</h2>
-                    <p>Escríbenos para resolver tus dudas, recibir asesoría personalizada o conocer más sobre nuestras soluciones en energías renovables.</p>
+                    <p>Escríbenos para resolver tus dudas, recibir asesoría personalizada o conocer más sobre nuestras
+                        soluciones en energías renovables.</p>
                 </div>
             </section>
 
@@ -332,10 +356,14 @@
                 <div class="footerdos-textodos">
                     <h2>Enlaces</h2>
                     <ul>
-                        <li><a href="https://www.repsol.com/es/energia-futuro/futuro-planeta/energia-solar/index.cshtml" target="_blank">Repsol</a></li>
-                        <li><a href="https://www.iberdrola.com/sostenibilidad/energia-eolica" target="_blank">Iberdrola</a></li>
-                        <li><a href="https://www.enelgreenpower.com/es/learning-hub/energia-biomasa" target="_blank">Enel</a></li>
-                        <li><a href="https://www.factorenergia.com/es/blog/eficiencia-energetica/energia-renovable-hidraulica/" target="_blank">Factor Energia</a></li>
+                        <li><a href="https://www.repsol.com/es/energia-futuro/futuro-planeta/energia-solar/index.cshtml"
+                                target="_blank">Repsol</a></li>
+                        <li><a href="https://www.iberdrola.com/sostenibilidad/energia-eolica"
+                                target="_blank">Iberdrola</a></li>
+                        <li><a href="https://www.enelgreenpower.com/es/learning-hub/energia-biomasa"
+                                target="_blank">Enel</a></li>
+                        <li><a href="https://www.factorenergia.com/es/blog/eficiencia-energetica/energia-renovable-hidraulica/"
+                                target="_blank">Factor Energia</a></li>
                     </ul>
                 </div>
             </section>
@@ -347,7 +375,8 @@
                         <input type="text" id="name" name="name" required placeholder="Nombre y apellidos">
                         <input type="email" id="email" name="email" required placeholder="Correo electrónico">
                         <input type="text" id="cellphone" name="cellphone" required placeholder="Celular">
-                        <textarea id="message" name="message" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                        <textarea id="message" name="message" required
+                            placeholder="Escribe tu mensaje aquí..."></textarea>
                     </fieldset>
 
                     <div class="control-btn">
@@ -376,4 +405,5 @@
     <script src="js/home/pais-energia-produccion.js"></script>
 
 </body>
+
 </html>

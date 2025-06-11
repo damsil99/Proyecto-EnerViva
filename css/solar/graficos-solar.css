@@ -13,7 +13,6 @@
     grid-template-columns: 1fr;
     flex: 1;
 }
-
 .grafico .titulo-grafico{
     grid-column: 1 / -1;
     text-align: right;
@@ -70,6 +69,7 @@
 
 .checkbox-container input[type="checkbox"] {
     margin-right: 8px;
+    margin-top: 10px;
 }
 
 canvas{

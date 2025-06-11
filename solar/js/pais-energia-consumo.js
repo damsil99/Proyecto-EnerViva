@@ -1,23 +1,15 @@
 document.addEventListener("DOMContentLoaded", function () {
-    fetch('data/produccion.json')
+    fetch('../data/consumo.json')
         .then(response => response.json())
         .then(data => {
-            const paisSelect = document.getElementById("pais2");
-            const pais1Select = document.getElementById("pais21");
-            const energiaSelect = document.getElementById('energia-type2');
-            const tipoGraficaSelect = document.getElementById("tipo-grafica2");
-            const checkbox = document.getElementById("habilita2");
-            const canvas = document.getElementById('graficos-energias2');
+            const paisSelect = document.getElementById("pais");
+            const pais1Select = document.getElementById("pais1");
+            const tipoGraficaSelect = document.getElementById("tipo-grafica");
+            const checkbox = document.getElementById("habilita");
+            const canvas = document.getElementById('graficos-energias');
             let chart = null;
 
             const Paises = new Map();
-            const Energias = {
-                "Biomasa": "Other renewables including bioenergy (TWh)",
-                "Solar": "Electricity from solar (TWh)",
-                "Eolica": "Electricity from wind (TWh)",
-                "Hydraulica": "Electricity from hydro (TWh)"
-            };
-
             pais1Select.disabled = true;
 
             checkbox.addEventListener("change", () => {
@@ -37,8 +29,8 @@ document.addEventListener("DOMContentLoaded", function () {
             });
 
             data.forEach(item => {
-                if (!Paises.has(item.Entity)) {
-                    Paises.set(item.Entity, item.Code);
+                if (!Paises.has(item.Pais)) {
+                    Paises.set(item.Pais, item.Codigo);
                 }
             });
 
@@ -51,13 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             });
 
-            Object.keys(Energias).forEach(energia => {
-                const option = document.createElement("option");
-                option.value = energia;
-                option.textContent = energia;
-                energiaSelect.appendChild(option);
-            });
-
             ["Lineal", "Barras", "Circular"].forEach(tipo => {
                 const option = document.createElement("option");
                 option.value = tipo.toLowerCase();
@@ -68,36 +53,34 @@ document.addEventListener("DOMContentLoaded", function () {
             function graficar() {
                 const pais = paisSelect.value;
                 const pais1 = pais1Select.value;
-                const energia = energiaSelect.value;
+                const energia = "Solar";
                 const tipo = tipoGraficaSelect.value;
 
                 if (!pais || !energia || !tipo) return;
 
-                const claveEnergia = Energias[energia];
-
                 const datosPais = data
-                    .filter(d => d.Entity === pais)
-                    .sort((a, b) => a.Year - b.Year);
+                    .filter(d => d.Pais === pais)
+                    .sort((a, b) => a.year - b.year);
 
-                const labels = datosPais.map(d => d.Year);
-                const valores = datosPais.map(d => d[claveEnergia]);
+                const labels = datosPais.map(d => d.year);
+                const valores = datosPais.map(d => d[energia]);
 
                 const generarColores = cantidad => {
                     const base = [
-                        'rgba(255, 99, 132, 0.6)', 
-                        'rgba(54, 162, 235, 0.6)', 
+                        'rgba(255, 99, 132, 0.6)',
+                        'rgba(54, 162, 235, 0.6)',
                         'rgba(255, 206, 86, 0.6)',
-                        'rgba(75, 192, 192, 0.6)', 
-                        'rgba(153, 102, 255, 0.6)', 
+                        'rgba(75, 192, 192, 0.6)',
+                        'rgba(153, 102, 255, 0.6)',
                         'rgba(255, 159, 64, 0.6)',
-                        'rgba(199, 199, 199, 0.6)', 
-                        'rgba(83, 102, 255, 0.6)', 
+                        'rgba(199, 199, 199, 0.6)',
+                        'rgba(83, 102, 255, 0.6)',
                         'rgba(255, 0, 255, 0.6)',
-                        'rgba(0, 255, 127, 0.6)', 
-                        'rgba(0, 128, 255, 0.6)', 
+                        'rgba(0, 255, 127, 0.6)',
+                        'rgba(0, 128, 255, 0.6)',
                         'rgba(128, 0, 255, 0.6)',
-                        'rgba(255, 128, 0, 0.6)', 
-                        'rgba(128, 255, 0, 0.6)', 
+                        'rgba(255, 128, 0, 0.6)',
+                        'rgba(128, 255, 0, 0.6)',
                         'rgba(255, 0, 128, 0.6)'
                     ];
                     return Array.from({ length: cantidad }, (_, i) => base[i % base.length]);
@@ -130,9 +113,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     if (checkbox.checked && pais1) {
                         const datosPais1 = data
-                            .filter(d => d.Entity === pais1)
-                            .sort((a, b) => a.Year - b.Year);
-                        const valores1 = datosPais1.map(d => d[claveEnergia]);
+                            .filter(d => d.Pais === pais1)
+                            .sort((a, b) => a.year - b.year);
+                        const valores1 = datosPais1.map(d => d[energia]);
                         datasets.push({
                             label: pais1,
                             data: valores1,
@@ -161,7 +144,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         scales: tipoChart !== 'pie' ? {
                             y: {
                                 beginAtZero: true,
-                                title: { display: true, text: 'Produccion (TWh)' }
+                                title: { display: true, text: 'Consumo' }
                             },
                             x: {
                                 title: { display: true, text: 'Año' }
@@ -171,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             }
 
-            [paisSelect, pais1Select, energiaSelect, tipoGraficaSelect].forEach(el => {
+            [paisSelect, pais1Select, tipoGraficaSelect].forEach(el => {
                 el.addEventListener("change", graficar);
             });
         })
