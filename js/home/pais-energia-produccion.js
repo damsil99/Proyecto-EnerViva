@@ -1,9 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-<<<<<<< HEAD
-    fetch('/data/produccion.json')
-=======
     fetch('data/produccion.json')
->>>>>>> d72753ebef0f5f3500619fbfdf3136b8affb9ca5
         .then(response => response.json())
         .then(data => {
             const paisSelect = document.getElementById("pais2");
