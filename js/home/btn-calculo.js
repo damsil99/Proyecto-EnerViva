@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     document.querySelectorAll('.btn-calculo').forEach(boton => {
         boton.addEventListener('click', function(){ 
-            const form = this.closest('.a-solar');
+            const form = this.closest('.m-content');
             const consumoInput = form.querySelector('.consumo')
             const consumo = parseFloat(consumoInput.value);
 
@@ -46,6 +46,8 @@ document.addEventListener("DOMContentLoaded", function() {
         ahorroEconomico.toFixed(2);
 
         resultado.classList.remove("hidden");
+
+        form.closest(".modal-energia").appendChild(resultado);
         });
     });
 });
