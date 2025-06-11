@@ -49,6 +49,7 @@
                     <img id="slider1" src="img/solar.png" alt="Parque solar">
                     <div class="slider-text">
                         <h2>Energía Solar</h2>
+<<<<<<< HEAD
                         <p>La energía solar es la energía que proviene del sol y que puede ser convertida en energía
                             térmica o eléctrica. </p>
                     </div>
@@ -79,6 +80,32 @@
                         </p>
                     </div>
             </li></a>
+=======
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                    </div>    
+            </a></li>
+            <li>
+                <img id="slider2" src="img/biomasa.png" alt="Fabrica de biomasa">
+                <div class="slider-text">
+                    <h2>Imagen 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                </div>
+            </li>
+            <li>
+                <img id="slider3" src="img/hidraulica.png" alt="Represa gidroeléctrica">
+                <div class="slider-text">
+                    <h2>Imagen 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                </div>
+            </li>
+            <li>
+                <img id="slider4" src="img/eolica.png" alt="Parque eólico">
+                <div class="slider-text">
+                    <h2>Imagen 4</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
+                </div>
+            </li>
+>>>>>>> 9c0bbd39e2aad96fd29657e2d939f888f0378b6a
         </ul>
         <button class="flecha left" onclick="moveSlide(-1)">&#10094;</button>
         <button class="flecha right" onclick="moveSlide(1)">&#10095;</button>
@@ -226,9 +253,16 @@
                 </div>
 
                 <div class="col-der">
+<<<<<<< HEAD
                     <label for="comparar-pais2">
                         <input type="checkbox" id="habilita2" name="habilita2"> Comparar con pais
                     </label>
+=======
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="habilita2" name="habilita2">
+                        <label for="comparar-pais2">Comparar con país</label>
+                    </div>
+>>>>>>> 9c0bbd39e2aad96fd29657e2d939f888f0378b6a
                     <label for="pais21">País: </label>
                     <select name="pais21" id="pais21">
                         <option value="" disabled selected> Seleccione una opción</option>
@@ -242,25 +276,33 @@
     <div class="graficos">
         <section class="grafico">
             <h2 class="consumo-energia">Consumo</h2>
-            <label for="pais">País: </label>
-            <select name="pais" id="pais">
-                <option value="" disabled selected> Seleccione una opción</option>
-            </select>
-            <label for="energia-type">Tipo de Enegría: </label>
-            <select name="energia-type" id="energia-type">
-                <option value="" disabled selected> Seleccione una opción</option>
-            </select>
-            <label for="tipo-grafica">Tipo de grafica: </label>
-            <select name="tipo-grafica" id="tipo-grafica">
-                <option value="" disabled selected>Seleccione una opción</option>
-            </select>
-            <label for="comparar-pais">
-                <input type="checkbox" id="habilita" name="habilita"> Comparar con pais
-            </label>
-            <label for="pais1">País: </label>
-            <select name="pais1" id="pais1">
-                <option value="" disabled selected> Seleccione una opción</option>
-            </select>
+            <div class="contenedor-desplegable">
+                <div class="col-izq">
+                    <label for="pais">País: </label>
+                    <select name="pais" id="pais">
+                        <option value="" disabled selected> Seleccione una opción</option>
+                    </select>
+                    <label for="energia-type">Tipo de Enegría: </label>
+                    <select name="energia-type" id="energia-type">
+                        <option value="" disabled selected> Seleccione una opción</option>
+                    </select>
+                    <label for="tipo-grafica">Tipo de grafica: </label>
+                    <select name="tipo-grafica" id="tipo-grafica">
+                        <option value="" disabled selected>Seleccione una opción</option>
+                    </select>
+                </div>
+
+                <div class="col-der">
+                    <div class="checkbox-container">
+                        <input type="checkbox" id="habilita" name="habilita">
+                        <label for="comparar-pais">Comparar con país</label>
+                    </div>
+                    <label for="pais1">País: </label>
+                    <select name="pais1" id="pais1">
+                        <option value="" disabled selected> Seleccione una opción</option>
+                    </select>
+                </div>
+            </div>
             <canvas id="graficos-energias"></canvas>
         </section>
     </div>

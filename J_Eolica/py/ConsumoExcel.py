@@ -2,9 +2,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Crea un dataframe que lee el archivo csv de consumo de energia desde la ruta relativa
-df = pd.read_csv("py/2-ConsumoEnergia.csv")
+df = pd.read_csv("J_Eolica\py\ConsumoEnergia.csv")
 # Crea un dataframe que lee el archivo csv de produccion de  de energia desde la ruta relativa
-dfPcc = pd.read_csv("py/3-ProduccionEnergia.csv")
+dfPcc = pd.read_csv("J_Eolica\py\ProduccionEnergia.csv")
+print(df)
+print(dfPcc)
+
 
 # Genero un filtro que muestre desde el 2000 porque antes no se evidencia produccion de esa energia (pcc-csmo)
 dfColombiaCsmo = df[(df["pais"]=='Colombia') & (df['year']>2000)]
@@ -31,7 +34,7 @@ plt.tight_layout()
 plt.legend()
 
 
-plt.savefig("py/vsConsumoProduccion.png")
+plt.savefig("J_Eolica/py/vsConsumoProduccion.png")
 plt.show()
 plt.close()
 print("Gráfico guardado correctamente.")
@@ -42,15 +45,19 @@ datosUltimoAnio=dfColombiaCsmo[dfColombiaCsmo['year']==ultimoAnio]
 
 energias= ['solar', 'eolica', 'biomasa', 'hidraulica']
 valores= [
-              float(datosUltimoAnio['solar']),
-              float(datosUltimoAnio['eolica']),
-              float(datosUltimoAnio['biomasa']),
-              float(datosUltimoAnio['hidro'])
-          ]
+            float(datosUltimoAnio['solar']),
+            float(datosUltimoAnio['eolica']),
+            float(datosUltimoAnio['biomasa']),
+            float(datosUltimoAnio['hidro'])
+        ]
 plt.figure(figsize=(12,7))
 
 # 4. Crear la gráfica de pastel
+<<<<<<< HEAD
 colores = ["#EFD74E", "#87CEEB", "#4E5CED", "#F8B687"]  # Amarillo solar, azul eólica, verde hidráulica, marrón biomasa
+=======
+colores = ["#4F4718", "#87CEEB", "#4E5CED", "#F8B687"]  # Amarillo solar, azul eólica, verde hidráulica, marrón biomasa
+>>>>>>> 9c0bbd39e2aad96fd29657e2d939f888f0378b6a
 plt.pie(valores, labels=energias, autopct='%1.1f%%', startangle=140, colors=colores, explode=[0.2,0.2,0.5,0.2])
 
 plt.title(f"Participacion de las energias Renovables en Colombia - {ultimoAnio}", fontsize=18)
@@ -58,7 +65,7 @@ plt.axis('equal')  # Asegura que la torta sea circular
 
 # # 5. Mostrar
 plt.legend()
-plt.savefig("py/torta")
+plt.savefig("J_Eolica/py/torta")
 plt.show()
 
 
@@ -89,7 +96,7 @@ plt.grid(axis='y', linestyle='--', alpha=0.7)
 plt.tight_layout()
 
 # Guardar grafico de Barras
-plt.savefig("py/barras")
+plt.savefig("J_Eolica/py/barras")
 
 # 6. Mostrar gráfico
 plt.show()
@@ -97,7 +104,7 @@ plt.show()
 
 # haremos un grafico de area para revisar las comparaciones
 # Leer el archivo de consumo
-df = pd.read_csv("py/2-ConsumoEnergia.csv")
+df = pd.read_csv("J_Eolica\py\ConsumoEnergia.csv")
 
 # Filtrar Colombia y años desde 1980
 dfCol = df[(df['pais'] == 'Colombia') & (df['year'] >= 1980)]
@@ -120,7 +127,7 @@ plt.ylabel("Consumo de Energía (TWh)")
 plt.legend(loc='upper left')
 plt.grid(True)
 plt.tight_layout()
-plt.savefig("py/AreaTodos")
+plt.savefig("J_Eolica/py/AreaTodos")
 plt.show()
 
 plt.figure(figsize=(12, 7))
@@ -129,7 +136,7 @@ plt.stackplot(dfCol['year'],
               dfCol['eolica'],
               dfCol['solar'],
               labels=['Eolica', 'Solar'],
-              colors=['skyblue', 'lightgreen'],
+              colors=['skyblue', 'yellow'],
               alpha=0.7)
 
 plt.title("Consumo de Energía Solar vs Eolica en Colombia (1980+)",fontsize=18)
@@ -138,6 +145,6 @@ plt.ylabel("Consumo de Energía (TWh)")
 plt.legend(loc='upper left')
 plt.grid(True)
 plt.tight_layout()
-plt.savefig("py/AreaSolarEolica")
+plt.savefig("J_Eolica/py/AreaSolarEolica")
 plt.show()
 

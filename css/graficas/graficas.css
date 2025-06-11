@@ -1,6 +1,10 @@
 .graficos{
     display: grid;
+<<<<<<< HEAD
     padding: 50px;
+=======
+    padding: 5px 50px;
+>>>>>>> 9c0bbd39e2aad96fd29657e2d939f888f0378b6a
     grid-template-columns: 1fr;
     flex: 1;
 }
@@ -13,6 +17,10 @@
     flex: 1;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 9c0bbd39e2aad96fd29657e2d939f888f0378b6a
 .grafico h2{
     text-align: right;
     font-weight: bold;
@@ -27,7 +35,11 @@
 .contenedor-desplegable {
     display: grid;
     grid-template-columns: 1fr 1fr;
+<<<<<<< HEAD
     gap: 40px;
+=======
+    gap: 10px;
+>>>>>>> 9c0bbd39e2aad96fd29657e2d939f888f0378b6a
     align-items: start;
 }
 
@@ -38,9 +50,49 @@
 }
 
 .grafico select{
+<<<<<<< HEAD
     padding: 10px;
+=======
+    width: 50%;
+    padding: 5px;
+>>>>>>> 9c0bbd39e2aad96fd29657e2d939f888f0378b6a
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 1rem;
     margin-bottom: 10px;
+<<<<<<< HEAD
+=======
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+canvas{
+    width: 100% !important;
+    height: 90% !important;
+    display: block;
+}
+
+#graficos-energias {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%; /* O el alto que tú desees */
+    max-height: 100%;
+    box-sizing: border-box;
+}
+
+#graficos-energias2 {
+    margin-top: 20px;
+    width: 100%;
+    height: 100%; /* O el alto que tú desees */
+    max-height: 100%;
+    box-sizing: border-box;
+>>>>>>> 9c0bbd39e2aad96fd29657e2d939f888f0378b6a
 }
