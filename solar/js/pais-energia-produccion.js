@@ -4,20 +4,12 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(data => {
             const paisSelect = document.getElementById("pais2");
             const pais1Select = document.getElementById("pais21");
-            const energiaSelect = document.getElementById('energia-type2');
             const tipoGraficaSelect = document.getElementById("tipo-grafica2");
             const checkbox = document.getElementById("habilita2");
             const canvas = document.getElementById('graficos-energias2');
             let chart = null;
 
             const Paises = new Map();
-            const Energias = {
-                "Biomasa": "Other renewables including bioenergy (TWh)",
-                "Solar": "Electricity from solar (TWh)",
-                "Eolica": "Electricity from wind (TWh)",
-                "Hydraulica": "Electricity from hydro (TWh)"
-            };
-
             pais1Select.disabled = true;
 
             checkbox.addEventListener("change", () => {
@@ -51,13 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             });
 
-            Object.keys(Energias).forEach(energia => {
-                const option = document.createElement("option");
-                option.value = energia;
-                option.textContent = energia;
-                energiaSelect.appendChild(option);
-            });
-
             ["Lineal", "Barras", "Circular"].forEach(tipo => {
                 const option = document.createElement("option");
                 option.value = tipo.toLowerCase();
@@ -68,19 +53,17 @@ document.addEventListener("DOMContentLoaded", function () {
             function graficar() {
                 const pais = paisSelect.value;
                 const pais1 = pais1Select.value;
-                const energia = energiaSelect.value;
+                const energia = "Electricity from solar (TWh)";
                 const tipo = tipoGraficaSelect.value;
 
                 if (!pais || !energia || !tipo) return;
-
-                const claveEnergia = Energias[energia];
 
                 const datosPais = data
                     .filter(d => d.Entity === pais)
                     .sort((a, b) => a.Year - b.Year);
 
                 const labels = datosPais.map(d => d.Year);
-                const valores = datosPais.map(d => d[claveEnergia]);
+                const valores = datosPais.map(d => d[energia]);
 
                 const generarColores = cantidad => {
                     const base = [
@@ -132,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         const datosPais1 = data
                             .filter(d => d.Entity === pais1)
                             .sort((a, b) => a.Year - b.Year);
-                        const valores1 = datosPais1.map(d => d[claveEnergia]);
+                        const valores1 = datosPais1.map(d => d[energia]);
                         datasets.push({
                             label: pais1,
                             data: valores1,
@@ -171,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             }
 
-            [paisSelect, pais1Select, energiaSelect, tipoGraficaSelect].forEach(el => {
+            [paisSelect, pais1Select, tipoGraficaSelect].forEach(el => {
                 el.addEventListener("change", graficar);
             });
         })

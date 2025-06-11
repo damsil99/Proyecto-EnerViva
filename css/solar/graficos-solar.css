@@ -1,5 +1,4 @@
 .graficos{
-    background-color: rgba(50, 50, 50, 1);
     display: grid;
     padding: 5px 50px;
     grid-template-columns: 1fr;
@@ -14,7 +13,6 @@
     grid-template-columns: 1fr;
     flex: 1;
 }
-
 .grafico .titulo-grafico{
     grid-column: 1 / -1;
     text-align: right;
@@ -24,7 +22,6 @@
     text-decoration: underline;
     font-size: 1.7em;
 }
-
 
 .grafico h2{
     text-align: right;
@@ -72,6 +69,7 @@
 
 .checkbox-container input[type="checkbox"] {
     margin-right: 8px;
+    margin-top: 10px;
 }
 
 canvas{
@@ -83,7 +81,7 @@ canvas{
 #graficos-energias {
     margin-top: 20px;
     width: 100%;
-    height: 100%; /* O el alto que tú desees */
+    height: 100%;
     max-height: 100%;
     border-radius: 10px;
     box-sizing: border-box;
@@ -92,7 +90,7 @@ canvas{
 #graficos-energias2 {
     margin-top: 20px;
     width: 100%;
-    height: 100%; /* O el alto que tú desees */
+    height: 100%;
     max-height: 100%;
     border-radius: 10px;
     box-sizing: border-box;

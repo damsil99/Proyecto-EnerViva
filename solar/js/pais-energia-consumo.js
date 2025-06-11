@@ -4,14 +4,12 @@ document.addEventListener("DOMContentLoaded", function () {
         .then(data => {
             const paisSelect = document.getElementById("pais");
             const pais1Select = document.getElementById("pais1");
-            const energiaSelect = document.getElementById('energia-type');
             const tipoGraficaSelect = document.getElementById("tipo-grafica");
             const checkbox = document.getElementById("habilita");
             const canvas = document.getElementById('graficos-energias');
             let chart = null;
 
             const Paises = new Map();
-            const Energias = new Set(["Biomasa", "Solar", "Eolica", "Hydraulica"]);
             pais1Select.disabled = true;
 
             checkbox.addEventListener("change", () => {
@@ -45,13 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             });
 
-            Energias.forEach(energia => {
-                const option = document.createElement("option");
-                option.value = energia;
-                option.textContent = energia;
-                energiaSelect.appendChild(option);
-            });
-
             ["Lineal", "Barras", "Circular"].forEach(tipo => {
                 const option = document.createElement("option");
                 option.value = tipo.toLowerCase();
@@ -62,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
             function graficar() {
                 const pais = paisSelect.value;
                 const pais1 = pais1Select.value;
-                const energia = energiaSelect.value;
+                const energia = "Solar";
                 const tipo = tipoGraficaSelect.value;
 
                 if (!pais || !energia || !tipo) return;
@@ -163,7 +154,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 });
             }
 
-            [paisSelect, pais1Select, energiaSelect, tipoGraficaSelect].forEach(el => {
+            [paisSelect, pais1Select, tipoGraficaSelect].forEach(el => {
                 el.addEventListener("change", graficar);
             });
         })
