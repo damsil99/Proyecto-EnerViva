@@ -6,6 +6,7 @@
     <title>Energía Solar</title>
     <link rel="stylesheet" href="../css/navbar/navbar.css">
     <link rel="stylesheet" href="../css/solar/solar.css">
+    <link rel="stylesheet" href="../css/footer/footer.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -134,7 +135,7 @@
     </div>
 
     <div id="calculadora" class="ahorro-solar">
-        <h2 class="h2-prinp">Calcula</h2>
+        <h2 class="h2-prinp">Calculadora</h2>
         <div class="a-solar">
             <h2 data-energia="solar">Calcula Tu Ahorro de Energía Solar</h2>
             <form class="form_ahorro">
@@ -174,11 +175,124 @@
     </div>
 
 
-    <div class="graficas">
-        <h2>Graficas</h2>
+    <div class="graficos">
+        <section class="grafico">
+            <h2>Análisis Gráficos</h2>
+            <h2 class="produccion-energia">Produccion</h2>
+            <label for="pais2">País: </label>
+            <select name="pais2" id="pais2">
+                <option value="" disabled selected> Seleccione una opción</option>
+            </select>
+            <label for="energia-type2">Tipo de Enegría: </label>
+            <select name="energia-type2" id="energia-type2">
+                <option value="" disabled selected> Seleccione una opción</option>
+            </select>
+            <label for="tipo-grafica2">Tipo de grafica: </label>
+            <select name="tipo-grafica2" id="tipo-grafica2">
+                <option value="" disabled selected>Seleccione una opción</option>
+            </select>
+            <label for="comparar-pais2">
+                <input type="checkbox" id="habilita2" name="habilita2"> Comparar con pais
+            </label>
+            <label for="pais21">País: </label>
+            <select name="pais21" id="pais21">
+                <option value="" disabled selected> Seleccione una opción</option>
+            </select>
+            <canvas id="graficos-energias2"></canvas>
+        </section>
     </div>
 
+    <div class="graficos">
+        <section class="grafico">
+            <h2 class="consumo-energia">Consumo</h2>
+            <label for="pais">País: </label>
+            <select name="pais" id="pais">
+                <option value="" disabled selected> Seleccione una opción</option>
+            </select>
+            <label for="energia-type">Tipo de Enegría: </label>
+            <select name="energia-type" id="energia-type">
+                <option value="" disabled selected> Seleccione una opción</option>
+            </select>
+            <label for="tipo-grafica">Tipo de grafica: </label>
+            <select name="tipo-grafica" id="tipo-grafica">
+                <option value="" disabled selected>Seleccione una opción</option>
+            </select>
+            <label for="comparar-pais">
+                <input type="checkbox" id="habilita" name="habilita"> Comparar con pais
+            </label>
+            <label for="pais1">País: </label>
+            <select name="pais1" id="pais1">
+                <option value="" disabled selected> Seleccione una opción</option>
+            </select>
+            <canvas id="graficos-energias"></canvas>
+        </section>
+    </div>
+
+    <footer class="footer" id="contactenos">
+        <div class="footer-form">
+            <section class="sectionbox">
+                <div class="footeruno-textouno">
+                    <h2>EnerViva</h2>
+                    <p>Enerviva es una iniciativa dedicada a promover el uso de energías limpias y sostenibles en Colombia, enfocándose especialmente en fuentes como la energía eólica e hidráulica. Busca educar, concienciar y fomentar el desarrollo de tecnologías verdes, contribuyendo así al cuidado del medio ambiente y a un futuro más sostenible.</p>
+                </div>
+
+                <div class="footeruno-textodos">
+                    <h2>Escribenos</h2>
+                    <p>Escríbenos para resolver tus dudas, recibir asesoría personalizada o conocer más sobre nuestras soluciones en energías renovables.</p>
+                </div>
+            </section>
+
+            <section class="sectionbox">
+                <div class="footerdos-textouno">
+                    <h2>Soluciones</h2>
+                    <ul>
+                        <li><a href="#energias-renovables">Energia Solar</a></li>
+                        <li><a href="#energias-renovables">Energía Hidraulica</a></li>
+                        <li><a href="#energias-renovables">Energías x Biomasa</a></li>
+                        <li><a href="#energias-renovables">Energías Eolica</a></li>
+                    </ul>
+                </div>
+
+                <div class="footerdos-textodos">
+                    <h2>Enlaces</h2>
+                    <ul>
+                        <li><a href="https://www.repsol.com/es/energia-futuro/futuro-planeta/energia-solar/index.cshtml" target="_blank">Repsol</a></li>
+                        <li><a href="https://www.iberdrola.com/sostenibilidad/energia-eolica" target="_blank">Iberdrola</a></li>
+                        <li><a href="https://www.enelgreenpower.com/es/learning-hub/energia-biomasa" target="_blank">Enel</a></li>
+                        <li><a href="https://www.factorenergia.com/es/blog/eficiencia-energetica/energia-renovable-hidraulica/" target="_blank">Factor Energia</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="sectionbox">
+                <h2>Contactenos</h2>
+                <form action="https://formspree.io/f/mzzgbjoe" method="POST">
+                    <fieldset>
+                        <input type="text" id="name" name="name" required placeholder="Nombre y apellidos">
+                        <input type="email" id="email" name="email" required placeholder="Correo electrónico">
+                        <input type="text" id="cellphone" name="cellphone" required placeholder="Celular">
+                        <textarea id="message" name="message" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </fieldset>
+
+                    <div class="control-btn">
+                        <label for="acepto">
+                            <input type="checkbox" id="acepto" name="acepto"> Acepto términos y condiciones
+                        </label>
+
+                        <button type="submit" class="btn-submit" id="btn-enviar" disabled>Enviar</button>
+                    </div>
+                </form>
+            </section>
+
+        </div>
+
+        <div class="footer-info">
+            <p>Creado por Julian, Luisa, Daniel: Bootcamp de Programación - 2025</p>
+        </div>
+    </footer>
+
     <script src="js/btn-solar.js"></script>
+    <script src="../js/home/encuesta.js"></script>
 
 </body>
 </html>

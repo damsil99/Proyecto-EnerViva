@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/navbar/navbar.css">
     <link rel="stylesheet" href="css/footer/footer.css">
     <link rel="stylesheet" href="css/modalEnergia/modal.css">
+    <link rel="stylesheet" href="css/graficas/graficas.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
@@ -45,10 +46,10 @@
             <li><a href="solar/solar.html">
                     <img id="slider1" src="img/solar.png" alt="Parque solar">
                     <div class="slider-text">
-                        <h2>Imagen 1</h2>
+                        <h2>Energía Solar</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. </p>
                     </div>    
-            </li></a>
+            </a></li>
             <li>
                 <img id="slider2" src="img/biomasa.png" alt="Fabrica de biomasa">
                 <div class="slider-text">
@@ -188,26 +189,33 @@
     <div class="graficos">
         <section class="grafico">
             <h2>Análisis Gráficos</h2>
-            <h2 class="produccion-energia">Produccion</h2>
-            <label for="pais2">País: </label>
-            <select name="pais2" id="pais2">
-                <option value="" disabled selected> Seleccione una opción</option>
-            </select>
-            <label for="energia-type2">Tipo de Enegría: </label>
-            <select name="energia-type2" id="energia-type2">
-                <option value="" disabled selected> Seleccione una opción</option>
-            </select>
-            <label for="tipo-grafica2">Tipo de grafica: </label>
-            <select name="tipo-grafica2" id="tipo-grafica2">
-                <option value="" disabled selected>Seleccione una opción</option>
-            </select>
-            <label for="comparar-pais2">
-                <input type="checkbox" id="habilita2" name="habilita2"> Comparar con pais
-            </label>
-            <label for="pais21">País: </label>
-            <select name="pais21" id="pais21">
-                <option value="" disabled selected> Seleccione una opción</option>
-            </select>
+            <h2 class="produccion-energia">Producción</h2>
+            <div class="contenedor-desplegable">
+                <div class="col-izq">
+                    <label for="pais2">País: </label>
+                    <select name="pais2" id="pais2">
+                        <option value="" disabled selected> Seleccione una opción</option>
+                    </select>
+                    <label for="energia-type2">Tipo de Enegría: </label>
+                    <select name="energia-type2" id="energia-type2">
+                        <option value="" disabled selected> Seleccione una opción</option>
+                    </select>
+                    <label for="tipo-grafica2">Tipo de grafica: </label>
+                    <select name="tipo-grafica2" id="tipo-grafica2">
+                        <option value="" disabled selected>Seleccione una opción</option>
+                    </select>
+                </div>
+
+                <div class="col-der">
+                    <label for="comparar-pais2">
+                        <input type="checkbox" id="habilita2" name="habilita2"> Comparar con pais
+                    </label>
+                    <label for="pais21">País: </label>
+                    <select name="pais21" id="pais21">
+                        <option value="" disabled selected> Seleccione una opción</option>
+                    </select>
+                </div>
+            </div>
             <canvas id="graficos-energias2"></canvas>
         </section>
     </div>
@@ -306,7 +314,7 @@
                     <h2>Soluciones</h2>
                     <ul>
                         <li><a href="#energias-renovables">Energia Solar</a></li>
-                        <li><a href="#energias-renovables">Energía HidraulicaRenovables</a></li>
+                        <li><a href="#energias-renovables">Energía Hidraulica</a></li>
                         <li><a href="#energias-renovables">Energías x Biomasa</a></li>
                         <li><a href="#energias-renovables">Energías Eolica</a></li>
                     </ul>
