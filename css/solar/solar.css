@@ -148,14 +148,29 @@ body{
 .item:nth-child(5){grid-area: item5;}
 
 .item{
-    background-color: rgba(200,200,200, 1);
+    background-color: rgba(200,200,200, 0.8);
     border-radius: 10px;
     padding: 15px;
     text-align: justify;
 }
 
+.item p{
+    color: black;
+}
+
 .item h2{
+    color: black;
     text-align: center;
+}
+
+.v-d .prin-title{
+    grid-column: 1 / -1;
+    text-align: left;
+    font-size: 1.7em;
+    margin: 10px 0 0 150px;
+    padding: 0;
+    color: rgba(0, 0, 0, 1);
+    text-decoration: underline;
 }
 
 .ventajas-desventajas{
@@ -174,10 +189,11 @@ body{
 .item1:nth-child(3){grid-area: item13;}
 
 .item1{
-    background-color: rgba(200,200,200, 1);
+    background-color: rgba(200,200,200, 0.3);
     border-radius: 10px;
     padding: 15px;
     text-align: center;
+    color: black;
 }
 
 .item1 ul li{
@@ -188,6 +204,8 @@ body{
     width: 100%;
 
 }
+
+
 .ahorro-solar{
     background-color: rgba(50, 50, 50, 0.8);
     color: black;
@@ -196,11 +214,20 @@ body{
     position: relative;
 }
 
+.a-solar h2{
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+}
+
 .ahorro-solar .h2-prinp{
-    font-weight: bold;
-    font-size: 38px;
-    color: white;
-    
+    grid-column: 1 / -1;
+    text-align: right;
+    font-size: 1.7em;
+    margin-right: -850px;
+    padding: 0;
+    color: rgba(255, 255, 255, 1);
+    text-decoration: underline;    
 }
 
 .solar-energia p{
@@ -215,12 +242,6 @@ body{
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     justify-items: center;
-}
-
-.a-solar h2{
-    text-align: justify;
-    margin: 0;
-    padding: 0;
 }
 
 
@@ -293,6 +314,51 @@ input[type="number"]{
     display: none;
 }
 
+.paises .p-paises{
+    grid-column: 1 / -1;
+    text-align: left;
+    font-size: 1.7em;
+    margin: 100px 0 0 150px;
+    padding: 0;
+    color: rgba(0, 0, 0, 1);
+    text-decoration: underline;
+}
+
+.paises h2{
+    color: black;
+}
+
+.paises-solar{
+    display: grid;
+    gap: 10px;
+    margin: 50px 0;
+    padding: 0 150px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 
+        "item21 item22"
+        "item23 item24";
+}
+
+.item2:nth-child(1){grid-area: item21;}
+.item2:nth-child(2){grid-area: item22;}
+.item2:nth-child(3){grid-area: item23;}
+.item2:nth-child(4){grid-area: item24;}
+
+.item2{
+    background-color: rgba(200,200,200, 0.3);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+}
+
+
+.item2 img{
+    margin-top: 5%;
+    width: 40%;
+
+}
+
 
 .graficos{
     background-color: rgba(50, 50, 50, 1);
@@ -317,7 +383,9 @@ input[type="number"]{
 }
 
 canvas {
-    width: 100%;
-    height: 300px;
+    width: 100% !important;
+    height: 100% !important;
+    max-height: 300px;
+    display: block;
     background-color: white;
 }

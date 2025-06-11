@@ -134,7 +134,8 @@
         </main>
     </div>
 
-    <div>
+    <div class="v-d">
+        <h2 class="prin-title">Ventajas y Desventajas</h2>
         <main class="ventajas-desventajas" id="ven-desv">
             <section class="item1">
                 <img src="../img/imagen de energía so.png" alt="">
@@ -189,17 +190,33 @@
     </div>
 
     <div class="paises" id="paises">
-        <h2>Países donde más se utiliza la energía solar</h2>
-        <main>
+        <h2 class="p-paises">Países donde más se utiliza la energía solar</h2>
+        <main class="paises-solar">
             <section class="item2">
+                <img src="img/china.png" alt="Bandera de China">
+                <h2>China</h2>
+                <p>Es el líder mundial en capacidad instalada y generación de energía solar.</p>
 
             </section>
 
             <section class="item2">
+                <img src="img/usa.png" alt="Bandera de Estados Unidos">
+                <h2>Estados Unidos</h2>
+                <p> Tiene una gran producción, especialmente en estados como California, Texas y Arizona.</p>
 
             </section>
 
             <section class="item2">
+                <img src="img/india.png" alt="Bandera de India">
+                <h2>India</h2>
+                <p>Ha aumentado considerablemente su capacidad solar en los últimos años, especialmente en regiones como Rajasthan y Gujarat.</p>
+
+            </section>
+
+            <section class="item2">
+                <img src="img/alemania.png" alt="Bandera de Alemania">
+                <h2>Alemania</h2>
+                <p>Aunque su clima no es el más soleado, sigue siendo uno de los principales productores gracias a una fuerte inversión en energías renovables.</p>
 
             </section>
         </main>
@@ -207,62 +224,65 @@
 
 
     <div class="graficos" id="graficos">
-        <section class="grafico">
-            <h2 class="titulo-grafico">Análisis Gráficos Energía Solar</h2>
-            <h2 class="produccion-energia">Producción Energía Solar</h2>
-            <div class="contenedor-desplegable">
-                <div class="col-izq">
-                    <label for="pais2">País: </label>
-                    <select name="pais2" id="pais2">
-                        <option value="" disabled selected> Seleccione una opción</option>
-                    </select>
-                    <label for="tipo-grafica2">Tipo de grafica: </label>
-                    <select name="tipo-grafica2" id="tipo-grafica2">
-                        <option value="" disabled selected>Seleccione una opción</option>
-                    </select>
-                </div>
-
-                <div class="col-der">
-                    <div class="checkbox-container">
-                        <input type="checkbox" id="habilita2" name="habilita2">
-                        <label for="comparar-pais2">Comparar con país</label>
+        <h2 class="titulo-grafico">Análisis Gráficos Energía Solar</h2>
+        <main class="main-graficos">
+            <section class="grafico">
+                <h2 class="produccion-energia">Producción Energía Solar</h2>
+                <div class="contenedor-desplegable">
+                    <div class="col-izq">
+                        <label for="pais2">País: </label>
+                        <select name="pais2" id="pais2">
+                            <option value="" disabled selected> Seleccione una opción</option>
+                        </select>
+                        <label for="tipo-grafica2">Tipo de grafica: </label>
+                        <select name="tipo-grafica2" id="tipo-grafica2">
+                            <option value="" disabled selected>Seleccione una opción</option>
+                        </select>
                     </div>
-                    <label for="pais21">País: </label>
-                    <select name="pais21" id="pais21">
-                        <option value="" disabled selected> Seleccione una opción</option>
-                    </select>
-                </div>
-            </div>
-            <canvas id="graficos-energias2"></canvas>
-        </section>
 
-        <section class="grafico">
-            <h2 class="consumo-energia">Consumo Energía Solar</h2>
-            <div class="contenedor-desplegable">
-                <div class="col-izq">
-                    <label for="pais">País: </label>
-                    <select name="pais" id="pais">
-                        <option value="" disabled selected> Seleccione una opción</option>
-                    </select>
-                    <label for="tipo-grafica">Tipo de grafica: </label>
-                    <select name="tipo-grafica" id="tipo-grafica">
-                        <option value="" disabled selected>Seleccione una opción</option>
-                    </select>
-                </div>
-
-                <div class="col-der">
-                    <div class="checkbox-container">
-                        <input type="checkbox" id="habilita" name="habilita">
-                        <label for="comparar-pais">Comparar con país</label>
+                    <div class="col-der">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="habilita2" name="habilita2">
+                            <label for="comparar-pais2">Comparar con país</label>
+                        </div>
+                        <label for="pais21">País: </label>
+                        <select name="pais21" id="pais21">
+                            <option value="" disabled selected> Seleccione una opción</option>
+                        </select>
                     </div>
-                    <label for="pais1">País: </label>
-                    <select name="pais1" id="pais1">
-                        <option value="" disabled selected> Seleccione una opción</option>
-                    </select>
                 </div>
-            </div>
-            <canvas id="graficos-energias"></canvas>
-        </section>
+                <canvas id="graficos-energias2"></canvas>
+            </section>
+
+            <section class="grafico">
+                <h2 class="consumo-energia">Consumo Energía Solar</h2>
+                <div class="contenedor-desplegable">
+                    <div class="col-izq">
+                        <label for="pais">País: </label>
+                        <select name="pais" id="pais">
+                            <option value="" disabled selected> Seleccione una opción</option>
+                        </select>
+                        <label for="tipo-grafica">Tipo de grafica: </label>
+                        <select name="tipo-grafica" id="tipo-grafica">
+                            <option value="" disabled selected>Seleccione una opción</option>
+                        </select>
+                    </div>
+
+                    <div class="col-der">
+                        <div class="checkbox-container">
+                            <input type="checkbox" id="habilita" name="habilita">
+                            <label for="comparar-pais">Comparar con país</label>
+                        </div>
+                        <label for="pais1">País: </label>
+                        <select name="pais1" id="pais1">
+                            <option value="" disabled selected> Seleccione una opción</option>
+                        </select>
+                    </div>
+                </div>
+                <canvas id="graficos-energias"></canvas>
+            </section>
+        </main>
+
     </div>
 
     <footer class="footer" id="contactenos">
