@@ -23,3 +23,8 @@ Somos un equipo de 3 desarrolladores trabajando de forma independiente, con dedi
 - JavaScript ES6
 - [Chart.js](https://www.chartjs.org/)
 - Datos en formato JSON
+
+## 👨‍🎓 Equipo de Trabajo
+- Luisa Agudelo
+- Daniel Mosquera
+- Julian Correa
