@@ -2,9 +2,9 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Crea un dataframe que lee el archivo csv de consumo de energia desde la ruta relativa
-df = pd.read_csv("py/2-ConsumoEnergia.csv")
+df = pd.read_csv("py/2ConsumoEnergia.csv")
 # Crea un dataframe que lee el archivo csv de produccion de  de energia desde la ruta relativa
-dfPcc = pd.read_csv("py/3-ProduccionEnergia.csv")
+dfPcc = pd.read_csv("py/3ProduccionEnergia.csv")
 
 # Genero un filtro que muestre desde el 2000 porque antes no se evidencia produccion de esa energia (pcc-csmo)
 dfColombiaCsmo = df[(df["pais"]=='Colombia') & (df['year']>2000)]
@@ -97,7 +97,7 @@ plt.show()
 
 # haremos un grafico de area para revisar las comparaciones
 # Leer el archivo de consumo
-df = pd.read_csv("py/2-ConsumoEnergia.csv")
+df = pd.read_csv("py/2ConsumoEnergia.csv")
 
 # Filtrar Colombia y años desde 1980
 dfCol = df[(df['pais'] == 'Colombia') & (df['year'] >= 1980)]
