@@ -1,0 +1,46 @@
+.graficos{
+    display: grid;
+    padding: 50px;
+    grid-template-columns: 1fr;
+    flex: 1;
+}
+
+.grafico{
+    display: grid;
+    padding: 0 90px;
+    margin: 0;
+    grid-template-columns: 1fr;
+    flex: 1;
+}
+
+.grafico h2{
+    text-align: right;
+    font-weight: bold;
+}
+
+.grafico .produccion-energia,
+.grafico .consumo-energia{
+    margin: 50px;
+    text-align: center;
+}
+
+.contenedor-desplegable {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.col-izq, 
+.col-der {
+    display: flex;
+    flex-direction: column;
+}
+
+.grafico select{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
