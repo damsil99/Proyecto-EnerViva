@@ -182,12 +182,11 @@ body{
 .titulo-seccion2{
     grid-column: 1 / -1;
     text-align: left;
-    font-size: 2em;
+    font-size: 1.7em;
     margin: 50px 0 0 150px;
     padding: 0;
-    color: rgba(0, 0, 0, 0.7);
+    color: rgba(0, 0, 0, 1);
     text-decoration: underline;
-    font-size: 1.5em;
 }
 
 .quienes-somos{
@@ -268,13 +267,12 @@ canvas {
 
 .titulo-seccion3{
     grid-column: 1 / -1;
-    text-align: right;
-    font-size: 2em;
-    margin: 50px 150px 0 0;
+    text-align: left;
+    font-size: 1.7em;
+    margin: 50px 0 0 150px;
     padding: 0;
-    color: white;
+    color: black;
     text-decoration: underline;
-    font-size: 1.5em;
 }
 
 .nuestro-equipo{
