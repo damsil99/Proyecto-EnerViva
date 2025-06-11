@@ -180,6 +180,10 @@ body{
     text-align: justify;
 }
 
+.item1 img{
+    width: 100%;
+
+}
 .ahorro-solar{
     background-color: rgba(50, 50, 50, 0.8);
     color: black;
