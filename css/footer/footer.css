@@ -118,3 +118,24 @@ input[type="checkbox"]{
     padding: 10px;
     padding-left: 40px;
 }
+
+@media (max-width: 768px) {
+    .footer-form {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .sectionbox h2 {
+        font-size: 1.5em;
+    }
+
+    .control-btn button {
+        font-size: 1rem;
+    }
+
+    .footer-info {
+        padding: 10px 20px;
+        text-align: center;
+    }
+}

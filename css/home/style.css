@@ -318,7 +318,7 @@ canvas {
     transform: scale(1.03);
     transition: transform 0.2s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-}
+} 
 
 
 .modal{
@@ -388,39 +388,94 @@ canvas {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #energias-renovables {
-    scroll-margin-top: 30px; /* Ajusta según el espacio que necesites */
+    scroll-margin-top: 30px;
 }
 
 
 html{
-    /* Ajusta el valor según la altura de tu header */
     scroll-padding-top: 20px; 
+}
+
+
+@media (max-width: 768px) {
+    .slider-text {
+        margin-left: 5%;
+        top: 20%;
+    }
+
+    .slider-text h2 {
+        font-size: 30px;
+    }
+
+    .flecha{
+        top: 90%;
+    }
+
+    .slider-text p {
+        font-size: 16px;
+        padding-right: 20px;
+    }
+
+    .main-content {
+        grid-template-columns: 1fr;
+        padding: 0 20px;
+    }
+
+    .energia {
+        width: 100%;
+        height: auto;
+    }
+
+    .energia img {
+        width: 40%;
+    }
+
+    .layout-grid-2,
+    .layout-grid-3 {
+        padding: 20px;
+    }
+
+    .main-content-2,
+    .main-content-3 {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .titulo-seccion2,
+    .titulo-seccion3 {
+        margin: 20px 0 0 20px;
+        font-size: 1.4em;
+        text-align: center;
+    }
+
+    .quienes-somos h2 {
+        margin-top: 10%;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .quienes-somos p {
+        padding: 20px;
+        font-size: 0.9em;
+    }
+
+    .nuestro-equipo {
+        margin: 20px 0;
+        text-align: center;
+    }
+
+    .nuestro-equipo img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    .graficos {
+        padding: 10px;
+    }
+
+    .modal-content {
+        width: 90%;
+        padding: 15px;
+    }
 }
