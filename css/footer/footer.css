@@ -17,6 +17,11 @@
     grid-template-columns: 1.5fr 1fr 2fr;
 }
 
+.footeruno-textouno p,
+.footeruno-textodos p{
+    text-align: justify;
+}
+
 .sectionbox h2{
     font-size: 30px;
 }
